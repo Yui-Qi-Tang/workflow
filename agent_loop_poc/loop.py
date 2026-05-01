@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Minimal orchestrator for the markdown-based workflow."""
+"""Minimal orchestrator for the JSON-first workflow."""
 
 from __future__ import annotations
 
@@ -15,7 +15,15 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_VERSION = "agent_loop_poc.v1"
 STAGES = ("tasker", "researcher", "planner", "implementer", "reviewer")
-HUMAN_HINTS = ("clarify", "approval", "confirm", "user", "task update")
+HUMAN_HINTS = (
+    "clarify",
+    "approval",
+    "confirm",
+    "user",
+    "task update",
+    "open_questions",
+    "requires_user_approval",
+)
 
 
 @dataclass
@@ -54,6 +62,67 @@ def extract_field(text: str, field: str) -> str | None:
     if not match:
         return None
     return match.group(1).strip()
+
+
+def parse_json_artifact(text: str) -> dict[str, Any] | None:
+    try:
+        value = json.loads(text)
+    except json.JSONDecodeError:
+        return None
+    if not isinstance(value, dict):
+        return None
+    return value
+
+
+def get_nested(data: dict[str, Any] | None, key: str) -> Any:
+    if data is None:
+        return None
+    value: Any = data
+    for part in key.split("."):
+        if not isinstance(value, dict) or part not in value:
+            return None
+        value = value[part]
+    return value
+
+
+def stringify_field(value: Any) -> str | None:
+    if value is None:
+        return None
+    if isinstance(value, str):
+        value = value.strip()
+        return value or None
+    return str(value).strip() or None
+
+
+def artifact_field(
+    text: str,
+    data: dict[str, Any] | None,
+    *,
+    json_keys: tuple[str, ...],
+    markdown_field: str,
+) -> str | None:
+    for key in json_keys:
+        value = stringify_field(get_nested(data, key))
+        if value is not None:
+            return value
+    if data is None:
+        return extract_field(text, markdown_field)
+    return None
+
+
+def normalize_status(value: str | None) -> str | None:
+    if value is None:
+        return None
+    return value.strip().lower()
+
+
+def normalize_target(value: str | None) -> str | None:
+    if value is None:
+        return None
+    target = value.strip().lower()
+    if target in {"", "none", "null", "unknown", "not_applicable"}:
+        return None
+    return target
 
 
 def read_text(path: Path) -> str:
@@ -148,53 +217,128 @@ def sync_state(paths: TaskPaths, existing: dict[str, Any] | None = None) -> dict
 
     if paths.reviewer_review.exists():
         text = read_text(paths.reviewer_review)
-        judgment = extract_field(text, "Overall Judgment")
-        target = extract_field(text, "Recommended Return Target")
+        artifact = parse_json_artifact(text)
+        judgment = normalize_status(
+            artifact_field(
+                text,
+                artifact,
+                json_keys=("overall_judgment", "status"),
+                markdown_field="Overall Judgment",
+            )
+        )
+        target = normalize_target(
+            artifact_field(
+                text,
+                artifact,
+                json_keys=("recommended_return_target", "handoff.next_agent"),
+                markdown_field="Recommended Return Target",
+            )
+        )
         current_stage = "reviewer"
         last_completed_stage = "reviewer"
         if judgment == "success":
             status = "completed"
             reason = "Reviewer marked the workflow successful."
         elif judgment == "failed":
-            return_target = None if target in (None, "NONE") else target
+            return_target = target
             next_stage = return_target
             status = "needs_revision" if return_target else "blocked"
             needs_user_input = infer_waiting_user(text)
             reason = "Reviewer marked the workflow failed and routed it upstream." if return_target else "Reviewer failed the workflow without a return target."
     elif paths.reviewer_result.exists():
         text = read_text(paths.reviewer_result)
-        result_status = extract_field(text, "Status")
-        target = extract_field(text, "Suggested Return Target")
+        artifact = parse_json_artifact(text)
+        result_status = normalize_status(
+            artifact_field(
+                text,
+                artifact,
+                json_keys=("status",),
+                markdown_field="Status",
+            )
+        )
+        target = normalize_target(
+            artifact_field(
+                text,
+                artifact,
+                json_keys=("suggested_return_target", "handoff.next_agent"),
+                markdown_field="Suggested Return Target",
+            )
+        )
         current_stage = "implementer"
         last_completed_stage = "implementer"
         if result_status == "success":
             status = "ready"
             next_stage = "reviewer"
             reason = "Implementer completed successfully; reviewer should run next."
-        elif result_status in {"failed", "partial_failure"}:
-            return_target = None if target in (None, "NONE") else target
+        elif result_status in {"failed", "partial_failure", "blocked"}:
+            return_target = target
             next_stage = return_target
             status = "needs_revision" if return_target else "blocked"
             needs_user_input = infer_waiting_user(text)
             reason = "Implementer reported a failure and suggested returning upstream." if return_target else "Implementer reported a failure without a return target."
     elif paths.implementer_impl.exists():
+        text = read_text(paths.implementer_impl)
+        artifact = parse_json_artifact(text)
+        artifact_status = normalize_status(
+            artifact_field(
+                text,
+                artifact,
+                json_keys=("status",),
+                markdown_field="Status",
+            )
+        )
         current_stage = "planner"
         last_completed_stage = "planner"
-        next_stage = "implementer"
-        status = "ready"
-        reason = "Implementation brief exists; implementer should run next."
+        if artifact_status == "blocked":
+            status = "blocked"
+            needs_user_input = infer_waiting_user(text)
+            reason = "Implementation brief is blocked; implementer should not run."
+        else:
+            next_stage = "implementer"
+            status = "ready"
+            reason = "Implementation brief exists; implementer should run next."
     elif paths.planner_plan.exists():
+        text = read_text(paths.planner_plan)
+        artifact = parse_json_artifact(text)
+        artifact_status = normalize_status(
+            artifact_field(
+                text,
+                artifact,
+                json_keys=("status",),
+                markdown_field="Status",
+            )
+        )
         current_stage = "researcher"
         last_completed_stage = "researcher"
-        next_stage = "planner"
-        status = "ready"
-        reason = "Research plan exists; planner should run next."
+        if artifact_status == "blocked":
+            status = "blocked"
+            needs_user_input = infer_waiting_user(text)
+            reason = "Research plan is blocked; planner should not run."
+        else:
+            next_stage = "planner"
+            status = "ready"
+            reason = "Research plan exists; planner should run next."
     elif paths.researcher_task.exists():
+        text = read_text(paths.researcher_task)
+        artifact = parse_json_artifact(text)
+        artifact_status = normalize_status(
+            artifact_field(
+                text,
+                artifact,
+                json_keys=("status",),
+                markdown_field="Status",
+            )
+        )
         current_stage = "tasker"
         last_completed_stage = "tasker"
-        next_stage = "researcher"
-        status = "ready"
-        reason = "Normalized task exists; researcher should run next."
+        if artifact_status == "blocked":
+            status = "blocked"
+            needs_user_input = infer_waiting_user(text)
+            reason = "Normalized task is blocked; researcher should not run."
+        else:
+            next_stage = "researcher"
+            status = "ready"
+            reason = "Normalized task exists; researcher should run next."
     elif paths.tasker_input.exists():
         next_stage = "tasker"
         status = "initialized"
@@ -203,7 +347,7 @@ def sync_state(paths: TaskPaths, existing: dict[str, Any] | None = None) -> dict
         needs_user_input = True
         reason = f"Missing task input file: {paths.tasker_input}"
 
-    if status == "needs_revision" and needs_user_input:
+    if status in {"needs_revision", "blocked"} and needs_user_input:
         status = "waiting_user"
 
     state["status"] = status
@@ -253,7 +397,7 @@ def print_compact(state: dict[str, Any]) -> None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Minimal orchestrator for the markdown workflow.")
+    parser = argparse.ArgumentParser(description="Minimal orchestrator for the JSON-first workflow.")
     sub = parser.add_subparsers(dest="command", required=True)
 
     for name in ("init", "sync", "next", "status"):
