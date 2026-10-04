@@ -1,0 +1,6 @@
+tasker: required fields, enums, consistency and input hashes passed
+researcher: required fields, enums, consistency and input hashes passed
+planner: required fields, enums, consistency and input hashes passed
+task/plan/impl reviewer mirrors: exact canonical bytes
+CLI completed/done and read-only behavior: passed in final-tests.txt fixture tests
+Actual task completed/done smoke: reviewer final check, after review.md exists

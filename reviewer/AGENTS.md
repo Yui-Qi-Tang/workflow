@@ -94,6 +94,12 @@ Object requirements:
 
 ## Review Logic
 
+- Keep execution location, blocking cause, and responsibility separate. If the
+  evidence only establishes an environment impediment, use `failure_source:
+  NONE`, describe it with the optional common `blocker`, and route to the stage
+  that can resume after the impediment is resolved. Do not label an agent at fault
+  merely because execution stopped there. A workflow can remain unsuccessful
+  without evidence of an agent mistake.
 - `tasker` is the likely failure source if `task.md` already lost user intent,
   constraints, acceptance criteria, source of truth, or execution-critical
   workflow requirements.
@@ -115,6 +121,15 @@ Object requirements:
   by evidence.
 - Do not include Markdown headings, code fences, or prose outside the JSON
   object.
+
+## Saved-File Validation
+
+After writing your required output, follow the root saved-output validation rule:
+run the read-only `validate` command for this task and your stage against the
+actual file. Report the observed exit status and digest outside the JSON artifact.
+Do not announce handoff readiness if validation failed or was not run. Correct
+only your own in-scope artifact, respect task retry limits, and validate again.
+A valid blocked artifact does not authorize downstream execution.
 
 ## Output Only
 

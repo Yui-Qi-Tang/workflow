@@ -1,0 +1,34 @@
+{
+  "model": "gpt-6-luna",
+  "efforts": [
+    "low",
+    "high"
+  ],
+  "cells": 6,
+  "repeats": 1,
+  "files": {
+    "fixtures/aggregation/solution.py": "f831c85dc1ac04a560c011dde784abe38ed96d8bb0af0d0bb827d558b5ba4742",
+    "fixtures/aggregation/task.md": "4a42ceef6731e9d47c0edeb61435fa3a90eacc84e7ccd46f9c8500507f2a512a",
+    "fixtures/aggregation/smoke.py": "ff2373fe0efef46d9dec6675db2621d5e6855f2fa8604b1c53bdad53ac2274ef",
+    "fixtures/tickets/examples.json": "71f2deb446c90e22e74fb84cb16ae6423a681d54dcf7f9100753531f2c54b398",
+    "fixtures/tickets/solution.py": "9892fceb803c19e9a1e0aaa366d0287e87424a07ae39d1dd74ea6258e83fda1d",
+    "fixtures/tickets/policy.txt": "d18127e41a5d5dca6f8cf0c1e7bd15e0ec0b6ff27da770041151f0615787e4b3",
+    "fixtures/tickets/task.md": "0a71e05d6d374ebf6e59dcc33a85fde4cb1293f9218d558e9433e35f391b5cd8",
+    "fixtures/tickets/smoke.py": "4cdd67c03b7f1b5d31e7be408a5974d4c4de59d4e7432a1e7fcb15529fd81a2b",
+    "fixtures/conflict/solution.py": "7aee18f399390e1e50f726bb75289c382e6c70967168108096e0057958cd63ee",
+    "fixtures/conflict/task.md": "b10343ec293b423adad6ef129d93c1aa8870ab49d7573e76336d47059e3731fb",
+    "fixtures/conflict/smoke.py": "2e57f38248d5753d7feae35f8fbc9e4b4c774cb44d5630cce482baad1cda8831",
+    "frozen/controller/loop.py": "0782b12cedbc698049baa472f2e6452980a8b131bc34143606448c742b9a5cbc",
+    "frozen/controller/contracts.py": "4bf2446a574a4bf1d2be3faa5ea07a2fd2eaff909dcd73b15d888ee9b57aae06",
+    "frozen/rules/AGENTS.md": "5997e647fd0b50d5365fde2146238d81521df49cb2d5d46c83fe7f14f2e32ac9",
+    "frozen/rules/reviewer/AGENTS.md": "fd2d5042d007e0987d83bdd919ea4ce0bd1583bd150e3509f2fc2d007c312975",
+    "frozen/rules/planner/AGENTS.md": "287a3e1b7f75b17656742544b0d4860b8bd4020fc9c09f042e253bbe0af90320",
+    "frozen/rules/implementer/AGENTS.md": "aa714766730a3342f2f6555640fce58679bb63649bea364cd7f7ebf171c2084b",
+    "frozen/rules/researcher/AGENTS.md": "8064cf2bff0b7866981047e3da7ad7d2c37e43433beccfd01aef211fc1c548d9",
+    "frozen/rules/tasker/AGENTS.md": "a151f72cb6389b31a8ee3a704b00d9c9fbec252d0eda99ead00231a0ade70756",
+    "protocol.md": "aa1ec45d7e5527693a617103a8e749828e58f4ca4455dbfd8c37e3a28e40d787",
+    "evaluate.py": "5b7ff5b37b6d18ba33a0733001959551576f7a0adf87a5e860283257cc38b496",
+    "harness.py": "080e9139794d10b761276f2d468d45afa2f123e63f1e9e703db99851323e0666",
+    "setup.py": "2e3c9dab5ae8bcda5c4f20641a96f0d43fcf376ad416c6394fae8a49e76fe050"
+  }
+}

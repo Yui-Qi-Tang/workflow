@@ -1,0 +1,57 @@
+{
+  "schema_version": "agent_loop_poc.v2",
+  "task_id": "tickets",
+  "status": "blocked",
+  "current_stage": "researcher",
+  "next_stage": null,
+  "last_completed_stage": "tasker",
+  "return_target": null,
+  "needs_user_input": false,
+  "reason": "share/tickets/planner/plan.md: Invalid JSON artifact: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+  "reason_code": "artifact_invalid",
+  "blocker": null,
+  "invalidated_artifacts": [],
+  "artifacts": {
+    "tasker_input": true,
+    "researcher_task": true,
+    "planner_plan": true,
+    "implementer_impl": false,
+    "reviewer_result": false,
+    "reviewer_review": false
+  },
+  "history": [
+    {
+      "at": "2026-10-04T07:25:22+00:00",
+      "event": "sync",
+      "status": "initialized",
+      "current_stage": null,
+      "next_stage": "tasker",
+      "reason_code": "stage_ready"
+    },
+    {
+      "at": "2026-10-04T07:26:46+00:00",
+      "event": "sync",
+      "status": "ready",
+      "current_stage": "tasker",
+      "next_stage": "researcher",
+      "reason_code": "stage_ready"
+    },
+    {
+      "at": "2026-10-04T07:27:11+00:00",
+      "event": "sync",
+      "status": "ready",
+      "current_stage": "tasker",
+      "next_stage": "researcher",
+      "reason_code": "stage_ready"
+    },
+    {
+      "at": "2026-10-04T07:29:21+00:00",
+      "event": "sync",
+      "status": "blocked",
+      "current_stage": "researcher",
+      "next_stage": null,
+      "reason_code": "artifact_invalid"
+    }
+  ],
+  "updated_at": "2026-10-04T07:29:21+00:00"
+}

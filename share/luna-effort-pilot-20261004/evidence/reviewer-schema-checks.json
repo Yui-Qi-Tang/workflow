@@ -1,0 +1,22 @@
+[
+  {
+    "artifact": "normalized_task",
+    "status": "passed",
+    "evidence": "share/luna-effort-pilot-20261004/reviewer/task.md passed JSON, artifact and lineage validation; exact mirrors and input fingerprints checked by controller."
+  },
+  {
+    "artifact": "research_plan",
+    "status": "passed",
+    "evidence": "share/luna-effort-pilot-20261004/reviewer/plan.md passed JSON, artifact and lineage validation; exact mirrors and input fingerprints checked by controller."
+  },
+  {
+    "artifact": "implementation_brief",
+    "status": "passed",
+    "evidence": "share/luna-effort-pilot-20261004/reviewer/impl.md passed JSON, artifact and lineage validation; exact mirrors and input fingerprints checked by controller."
+  },
+  {
+    "artifact": "implementation_result",
+    "status": "passed",
+    "evidence": "share/luna-effort-pilot-20261004/reviewer/result.md passed JSON, artifact and lineage validation; exact mirrors and input fingerprints checked by controller."
+  }
+]

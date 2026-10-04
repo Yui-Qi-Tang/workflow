@@ -1,0 +1,13 @@
+{
+  "examples.json": "71f2deb446c90e22e74fb84cb16ae6423a681d54dcf7f9100753531f2c54b398",
+  "solution.py": "9892fceb803c19e9a1e0aaa366d0287e87424a07ae39d1dd74ea6258e83fda1d",
+  "policy.txt": "d18127e41a5d5dca6f8cf0c1e7bd15e0ec0b6ff27da770041151f0615787e4b3",
+  "AGENTS.md": "5997e647fd0b50d5365fde2146238d81521df49cb2d5d46c83fe7f14f2e32ac9",
+  "smoke.py": "4cdd67c03b7f1b5d31e7be408a5974d4c4de59d4e7432a1e7fcb15529fd81a2b",
+  "reviewer/AGENTS.md": "fd2d5042d007e0987d83bdd919ea4ce0bd1583bd150e3509f2fc2d007c312975",
+  "planner/AGENTS.md": "287a3e1b7f75b17656742544b0d4860b8bd4020fc9c09f042e253bbe0af90320",
+  "implementer/AGENTS.md": "aa714766730a3342f2f6555640fce58679bb63649bea364cd7f7ebf171c2084b",
+  "researcher/AGENTS.md": "8064cf2bff0b7866981047e3da7ad7d2c37e43433beccfd01aef211fc1c548d9",
+  "tasker/tickets.md": "0a71e05d6d374ebf6e59dcc33a85fde4cb1293f9218d558e9433e35f391b5cd8",
+  "tasker/AGENTS.md": "a151f72cb6389b31a8ee3a704b00d9c9fbec252d0eda99ead00231a0ade70756"
+}

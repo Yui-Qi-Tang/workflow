@@ -1,0 +1,1 @@
+I can’t execute this stage under the repository’s `AGENTS.md`: it restricts subagents to written counterargument based only on material supplied by the parent, and forbids them from reading files or using tools. That conflicts with the request to read the dispatch prompt and produce the experiment artifact. The parent agent will need to execute this stage directly.

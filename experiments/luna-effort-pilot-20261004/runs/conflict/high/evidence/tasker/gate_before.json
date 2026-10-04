@@ -1,0 +1,33 @@
+{
+  "schema_version": "agent_loop_poc.v2",
+  "task_id": "conflict",
+  "status": "initialized",
+  "current_stage": null,
+  "next_stage": "tasker",
+  "last_completed_stage": null,
+  "return_target": null,
+  "needs_user_input": false,
+  "reason": "Run tasker with the current required inputs.",
+  "reason_code": "stage_ready",
+  "blocker": null,
+  "invalidated_artifacts": [],
+  "artifacts": {
+    "tasker_input": true,
+    "researcher_task": false,
+    "planner_plan": false,
+    "implementer_impl": false,
+    "reviewer_result": false,
+    "reviewer_review": false
+  },
+  "history": [
+    {
+      "at": "2026-10-04T07:23:12+00:00",
+      "event": "sync",
+      "status": "initialized",
+      "current_stage": null,
+      "next_stage": "tasker",
+      "reason_code": "stage_ready"
+    }
+  ],
+  "updated_at": "2026-10-04T07:23:12+00:00"
+}

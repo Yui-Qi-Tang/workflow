@@ -1,0 +1,11 @@
+{
+  "project_root": "/Users/yuki/workspace/workflow",
+  "task_id": "handoff-repair-20261004",
+  "stages": [
+    "implementer",
+    "reviewer"
+  ],
+  "source": "Current conversation human request on 2026-10-04: 修正以下問題 (the three enumerated handoff issues).",
+  "statement": "The main agent may implement, validate and review the three requested workflow repairs within tasker/handoff-repair-20261004.md.",
+  "exception": "none for this repair task: execution stays with the main agent; subagents remain limited to tool-free textual opposition. The prior tested-model exception is not extended."
+}

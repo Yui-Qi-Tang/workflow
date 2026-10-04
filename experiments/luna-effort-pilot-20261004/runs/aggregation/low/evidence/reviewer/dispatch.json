@@ -1,0 +1,20 @@
+{
+  "case": "aggregation",
+  "effort": "low",
+  "stage": "reviewer",
+  "requested_model": "gpt-6-luna",
+  "fork_turns": "none",
+  "prepared_at": "2026-10-04T07:24:52.364463+00:00",
+  "output": "share/aggregation/reviewer/review.md",
+  "lineage": {
+    "revision": "fd204f18-dcc7-4bab-9dd2-fe1253ac34c9",
+    "input_fingerprints": {
+      "share/aggregation/reviewer/task.md": "e3ba64529b5cdf095bbfaea9b5ef132cfca90fd3be010a0ada57912aae05dfd8",
+      "share/aggregation/reviewer/plan.md": "bc69c07cead183539e34182e1a6efd036f62e0acfee6eb767ad2cbefdb5b0f8e",
+      "share/aggregation/reviewer/impl.md": "a82dcca71b6b8236755b15d4af5c9a3b2bc5c75ae41e6e52399bdfa990bede23",
+      "share/aggregation/reviewer/result.md": "e653ed8714cc86b12583baec2ec16ddf3f849e50fe5d381d4514ceff79f66653"
+    }
+  },
+  "finished_at": "2026-10-04T07:26:46.121185+00:00",
+  "artifact_exists": true
+}

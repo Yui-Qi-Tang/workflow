@@ -1,0 +1,9 @@
+{
+  "revision": "8d2082fa-858f-4054-830e-07c6bf80aea9",
+  "input_fingerprints": {
+    "share/workflow-integrity-20261003/reviewer/task.md": "3b9839359f304b02c134cd052ce71419261cec4bc1c86b6ff020b99524ea6ea3",
+    "share/workflow-integrity-20261003/reviewer/plan.md": "5f173f543005b09deac751e3dcb881951a27313e4321a7b554eb381e62d7a1b9",
+    "share/workflow-integrity-20261003/reviewer/impl.md": "e48e84ed9210b47f1cecb44a885b8b97273c35276d0d59de1f6cf1859b8ba115",
+    "share/workflow-integrity-20261003/reviewer/result.md": "e55cb113755003ffea48cddcaaa47c7fc36177d882ad7a5a4d697f06ed919832"
+  }
+}

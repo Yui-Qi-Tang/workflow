@@ -1,0 +1,17 @@
+{
+  "full_staged_diff_check": {
+    "exit_code": 2,
+    "stdout": "share/workflow-integrity-20261003/evidence/baseline-integrity.txt:3: trailing whitespace.\n+test_duplicate_keys_and_nonfinite_json_rejected (agent_loop_poc.test_integrity.IntegrityTests.test_duplicate_keys_and_nonfinite_json_rejected) ... \nshare/workflow-integrity-20261003/evidence/baseline-integrity.txt:7: trailing whitespace.\n+test_malformed_intermediate_never_advances (agent_loop_poc.test_integrity.IntegrityTests.test_malformed_intermediate_never_advances) ... \nshare/workflow-integrity-20261003/evidence/baseline-integrity.txt:15: trailing whitespace.\n+test_only_blocking_questions_wait (agent_loop_poc.test_integrity.IntegrityTests.test_only_blocking_questions_wait) ... \nshare/workflow-integrity-20261003/evidence/baseline-integrity.txt:18: trailing whitespace.\n+test_required_fields_and_nested_types (agent_loop_poc.test_integrity.IntegrityTests.test_required_fields_and_nested_types) ... \nshare/workflow-integrity-20261003/evidence/baseline-integrity.txt:29: trailing whitespace.\n+test_task_id_cannot_escape_repository (agent_loop_poc.test_integrity.IntegrityTests.test_task_id_cannot_escape_repository) ... \nshare/workflow-integrity-20261003/evidence/baseline-integrity.txt:38: trailing whitespace.\n+test_wrong_task_or_stage_is_rejected (agent_loop_poc.test_integrity.IntegrityTests.test_wrong_task_or_stage_is_rejected) ... \n",
+    "stderr": ""
+  },
+  "intentional_preservation": {
+    "path": "share/workflow-integrity-20261003/evidence/baseline-integrity.txt",
+    "reason": "Historical raw unittest failure log has six output-generated trailing spaces. Preserve original execution evidence; no source or documentation whitespace defect was found."
+  },
+  "all_other_staged_files": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "index_scope_and_bytes": "Exact allowlist and byte equality verified before this receipt was added; final index will be rechecked before commit."
+}

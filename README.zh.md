@@ -4,6 +4,10 @@
 
 `tasker -> researcher -> planner -> implementer -> reviewer`
 
+目前控制器版本：**0.3.0**。它驗證五階段產物與輸入版本，再決定下一步；
+目前不執行模型或命令。五階段也可由主代理依序負責，子代理只作文字反方；
+同一 invocation 執行時必須揭露隔離限制。
+
 README 只負責說明給人看。真正的 workflow 規則、輸出 schema、stage
 邊界，以 root `AGENTS.md` 和各 stage 最近的 `AGENTS.md` 為準。
 
@@ -102,10 +106,17 @@ python3 agent_loop_poc/loop.py init 24
 python3 agent_loop_poc/loop.py sync 24
 python3 agent_loop_poc/loop.py next 24
 python3 agent_loop_poc/loop.py status 24
+python3 agent_loop_poc/loop.py inputs 24 tasker
 ```
 
-POC 會優先讀 JSON artifact，並保留舊 Markdown label 的 fallback，方便舊資料
-過渡。
+0.3.0 嚴格驗證 JSON 契約。每階段開始前以 `inputs` 取得新的 `revision`
+與 `input_fingerprints`，連同產物寫入。上游變動後，受影響階段及下游必須
+重新產生；不可只替舊產物補雜湊。舊 Markdown 與缺版本證據的 JSON 會保留，
+但不能推進流程。review bundle 的副本也必須與正本逐位元相同。
+
+`status`、`next`、`inputs` 不寫入流程狀態；`init`、`sync` 才更新 state。
+完整操作與限制見 `agent_loop_poc/README.md`。格式與雜湊驗證不代表原始需求
+語意正確，也不證明模型所宣稱的命令確實執行。
 
 ## 維持流程健康的規則
 

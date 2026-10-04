@@ -1,0 +1,11 @@
+test_blocked_json_intermediate_artifact_stops_next_stage (agent_loop_poc.test_loop.LoopRoutingTests.test_blocked_json_intermediate_artifact_stops_next_stage) ... ok
+test_json_result_failure_routes_to_suggested_target (agent_loop_poc.test_loop.LoopRoutingTests.test_json_result_failure_routes_to_suggested_target) ... ok
+test_json_review_failed_routes_to_return_target (agent_loop_poc.test_loop.LoopRoutingTests.test_json_review_failed_routes_to_return_target) ... ok
+test_json_review_success_completes_workflow (agent_loop_poc.test_loop.LoopRoutingTests.test_json_review_success_completes_workflow) ... ok
+test_legacy_markdown_review_labels_still_parse (agent_loop_poc.test_loop.LoopRoutingTests.test_legacy_markdown_review_labels_still_parse) ... ok
+test_valid_json_does_not_fall_back_to_embedded_markdown (agent_loop_poc.test_loop.LoopRoutingTests.test_valid_json_does_not_fall_back_to_embedded_markdown) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.007s
+
+OK

@@ -1,0 +1,1 @@
+Produced the researcher `research_plan` artifact at `/Users/yuki/workspace/workflow/experiments/luna-effort-pilot-20261004/runs/aggregation/high/share/aggregation/planner/plan.md` with status `ready`. No checks were run at this stage.

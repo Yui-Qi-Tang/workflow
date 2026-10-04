@@ -1,0 +1,41 @@
+{
+  "schema_version": "agent_loop_poc.v2",
+  "task_id": "conflict",
+  "status": "waiting_user",
+  "current_stage": "tasker",
+  "next_stage": null,
+  "last_completed_stage": "tasker",
+  "return_target": null,
+  "needs_user_input": true,
+  "reason": "Resolve the structured blocking question, approval or proposed task update.",
+  "reason_code": "user_decision",
+  "blocker": null,
+  "invalidated_artifacts": [],
+  "artifacts": {
+    "tasker_input": true,
+    "researcher_task": true,
+    "planner_plan": false,
+    "implementer_impl": false,
+    "reviewer_result": false,
+    "reviewer_review": false
+  },
+  "history": [
+    {
+      "at": "2026-10-04T07:23:12+00:00",
+      "event": "sync",
+      "status": "initialized",
+      "current_stage": null,
+      "next_stage": "tasker",
+      "reason_code": "stage_ready"
+    },
+    {
+      "at": "2026-10-04T07:24:52+00:00",
+      "event": "sync",
+      "status": "waiting_user",
+      "current_stage": "tasker",
+      "next_stage": null,
+      "reason_code": "user_decision"
+    }
+  ],
+  "updated_at": "2026-10-04T07:24:52+00:00"
+}

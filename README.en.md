@@ -4,6 +4,11 @@ This repository simulates a staged AI-agent workflow:
 
 `tasker -> researcher -> planner -> implementer -> reviewer`
 
+Current control-plane version: **0.3.0**. It validates stage artifacts and input
+lineage before routing; it does not invoke models or execute commands. The main
+agent may own all five checkpoints, with subagents limited to textual challenges.
+Using one invocation must be disclosed as a context-isolation limitation.
+
 The README files are explanatory only. Workflow rules, output schemas, and
 stage boundaries are defined by the root `AGENTS.md` and the nearest
 stage-specific `AGENTS.md`.
@@ -107,10 +112,19 @@ python3 agent_loop_poc/loop.py init 24
 python3 agent_loop_poc/loop.py sync 24
 python3 agent_loop_poc/loop.py next 24
 python3 agent_loop_poc/loop.py status 24
+python3 agent_loop_poc/loop.py inputs 24 tasker
 ```
 
-The POC reads JSON artifacts first and keeps a legacy Markdown-label fallback
-for older artifacts.
+Version 0.3.0 strictly validates JSON contracts. Before each stage, use `inputs`
+to capture a fresh `revision` and `input_fingerprints` and include them in the
+output artifact. Changed upstream inputs require regenerating their consumers
+and descendants; do not simply stamp new hashes onto old work. Legacy Markdown
+and unversioned JSON are preserved but cannot authorize routing. Review mirrors
+must match canonical bytes.
+
+`status`, `next`, and `inputs` do not write workflow state; only `init` and `sync`
+update it. See `agent_loop_poc/README.md` for operations and limits. Structural and
+hash checks do not establish semantic fidelity or prove that reported commands ran.
 
 ## Healthy Workflow Rules
 

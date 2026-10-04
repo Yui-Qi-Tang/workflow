@@ -1,0 +1,1 @@
+已產生 tasker 交接 artifact，狀態為 `ready`：`/Users/yuki/workspace/workflow/experiments/luna-effort-pilot-20261004/runs/aggregation/low/share/aggregation/researcher/task.md`

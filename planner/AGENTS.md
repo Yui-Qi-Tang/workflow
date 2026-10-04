@@ -69,14 +69,25 @@ Allowed values:
 
 Object requirements:
 
-- `ordered_steps[]` must include `step`, `action`, `rationale`, and
-  `expected_evidence`.
-- `validation_plan[]` must include `check`, `command_or_method`,
-  `expected_result`, and `required`.
-- `escalation_conditions[]` must include `condition`, `return_target`, and
-  `reason`.
-- `expected_output` must include `result_artifact_path` and
-  `implementation_summary_requirements`.
+- `ordered_steps[]` must include `step` (integer, not boolean), `action`
+  (string), `rationale` (string), and `expected_evidence` (string).
+- `validation_plan[]` must include `check` (nonempty, unique string),
+  `command_or_method` (string), `expected_result` (string), and `required`
+  (boolean, not a string).
+- `escalation_conditions[]` must include `condition` (string), `return_target`
+  (one of the five stage names or `NONE`), and `reason` (string).
+- `expected_output.result_artifact_path`: string.
+- `expected_output.implementation_summary_requirements`: array of strings;
+  a single requirement still uses a one-element array, never a bare string.
+
+Example of the `expected_output` fragment (not a complete artifact):
+
+```json
+{
+  "result_artifact_path": "share/example/reviewer/result.md",
+  "implementation_summary_requirements": ["Report actual validation evidence."]
+}
+```
 
 ## Hard Constraints
 
@@ -89,6 +100,15 @@ Object requirements:
   assumption.
 - Do not include Markdown headings, code fences, or prose outside the JSON
   object.
+
+## Saved-File Validation
+
+After writing your required output, follow the root saved-output validation rule:
+run the read-only `validate` command for this task and your stage against the
+actual file. Report the observed exit status and digest outside the JSON artifact.
+Do not announce handoff readiness if validation failed or was not run. Correct
+only your own in-scope artifact, respect task retry limits, and validate again.
+A valid blocked artifact does not authorize downstream execution.
 
 ## Output Only
 

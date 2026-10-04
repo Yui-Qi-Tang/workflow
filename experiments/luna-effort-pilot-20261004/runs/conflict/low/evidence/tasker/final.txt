@@ -1,0 +1,1 @@
+Produced the blocked `normalized_task` artifact at `/Users/yuki/workspace/workflow/experiments/luna-effort-pilot-20261004/runs/conflict/low/share/conflict/researcher/task.md`. The mandatory duplicate policies require different outputs for the same call, so the handoff is `NONE`.

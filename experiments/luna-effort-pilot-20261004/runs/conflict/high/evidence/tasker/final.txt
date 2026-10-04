@@ -1,0 +1,1 @@
+Produced the tasker artifact at `experiments/luna-effort-pilot-20261004/runs/conflict/high/share/conflict/researcher/task.md` with status `blocked`. The conflicting duplicate requirements prevent handoff; `next_agent` is `NONE`.

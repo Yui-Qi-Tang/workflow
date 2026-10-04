@@ -1,0 +1,190 @@
+{
+  "cells": [
+    {
+      "case": "aggregation",
+      "effort": "low",
+      "primary_success": true,
+      "elapsed_seconds": 558.0,
+      "sum_stage_wall_seconds": 483.05,
+      "terminal": {
+        "kind": "review_success",
+        "stage": "reviewer"
+      },
+      "invocations": [
+        {
+          "stage": "tasker",
+          "artifact_exists": true,
+          "validation_errors": []
+        },
+        {
+          "stage": "researcher",
+          "artifact_exists": true,
+          "validation_errors": []
+        },
+        {
+          "stage": "planner",
+          "artifact_exists": true,
+          "validation_errors": []
+        },
+        {
+          "stage": "implementer",
+          "artifact_exists": true,
+          "validation_errors": []
+        },
+        {
+          "stage": "reviewer",
+          "artifact_exists": true,
+          "validation_errors": []
+        }
+      ]
+    },
+    {
+      "case": "aggregation",
+      "effort": "high",
+      "primary_success": false,
+      "elapsed_seconds": 311.82,
+      "sum_stage_wall_seconds": 311.48,
+      "terminal": {
+        "kind": "artifact_invalid",
+        "stage": "planner"
+      },
+      "invocations": [
+        {
+          "stage": "tasker",
+          "artifact_exists": true,
+          "validation_errors": []
+        },
+        {
+          "stage": "researcher",
+          "artifact_exists": true,
+          "validation_errors": []
+        },
+        {
+          "stage": "planner",
+          "artifact_exists": true,
+          "validation_errors": [
+            "$.expected_output.implementation_summary_requirements: expected array"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "conflict",
+      "effort": "low",
+      "primary_success": true,
+      "elapsed_seconds": 129.31,
+      "sum_stage_wall_seconds": 129.31,
+      "terminal": {
+        "kind": "stage_blocked",
+        "stage": "tasker"
+      },
+      "invocations": [
+        {
+          "stage": "tasker",
+          "artifact_exists": true,
+          "validation_errors": []
+        }
+      ]
+    },
+    {
+      "case": "conflict",
+      "effort": "high",
+      "primary_success": true,
+      "elapsed_seconds": 99.74,
+      "sum_stage_wall_seconds": 99.74,
+      "terminal": {
+        "kind": "user_decision",
+        "stage": "tasker"
+      },
+      "invocations": [
+        {
+          "stage": "tasker",
+          "artifact_exists": true,
+          "validation_errors": []
+        }
+      ]
+    },
+    {
+      "case": "tickets",
+      "effort": "low",
+      "primary_success": false,
+      "elapsed_seconds": 239.41,
+      "sum_stage_wall_seconds": 214.28,
+      "terminal": {
+        "kind": "artifact_invalid",
+        "stage": "researcher"
+      },
+      "invocations": [
+        {
+          "stage": "tasker",
+          "artifact_exists": true,
+          "validation_errors": []
+        },
+        {
+          "stage": "researcher",
+          "artifact_exists": true,
+          "validation_errors": [
+            "Invalid JSON artifact: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "tickets",
+      "effort": "high",
+      "primary_success": false,
+      "elapsed_seconds": 189.75,
+      "sum_stage_wall_seconds": 189.58,
+      "terminal": {
+        "kind": "invocation_refusal",
+        "stage": "researcher",
+        "artifact_produced": false,
+        "reason": "Stage refused to execute, citing opposition-only instructions; no artifact was produced. User exception was explicit inside prompt.txt but not repeated in the outer spawn message. No retry or parent artifact substitution.",
+        "classification": "authorization_delivery_or_instruction_resolution",
+        "model_capability_conclusion": "not_assessed",
+        "causality": "Authorization delivery or instruction-resolution problem is plausible, not isolated by a controlled follow-up. Full tool trace is unavailable, so whether prompt.txt was read is not verified."
+      },
+      "invocations": [
+        {
+          "stage": "tasker",
+          "artifact_exists": true,
+          "validation_errors": []
+        },
+        {
+          "stage": "researcher",
+          "artifact_exists": false,
+          "validation_errors": [
+            "not_produced"
+          ]
+        }
+      ]
+    }
+  ],
+  "calls": 14,
+  "raw_artifacts": 13,
+  "valid_artifacts": 11,
+  "invalid_artifacts": [
+    {
+      "case": "aggregation",
+      "effort": "high",
+      "stage": "planner",
+      "errors": [
+        "$.expected_output.implementation_summary_requirements: expected array"
+      ]
+    },
+    {
+      "case": "tickets",
+      "effort": "low",
+      "stage": "researcher",
+      "errors": [
+        "Invalid JSON artifact: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      ]
+    }
+  ],
+  "raw_unchanged": true,
+  "input_snapshots_unchanged": true,
+  "paired_initial_inputs": true,
+  "product_and_rules_unchanged": true,
+  "frozen_inputs_ok": true,
+  "cached_directories": []
+}

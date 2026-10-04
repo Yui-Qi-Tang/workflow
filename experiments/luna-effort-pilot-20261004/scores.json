@@ -1,0 +1,564 @@
+{
+  "frozen_inputs_ok": true,
+  "cells": 6,
+  "primary_passes": 3,
+  "scores": [
+    {
+      "case": "aggregation",
+      "effort": "low",
+      "primary_success": true,
+      "semantic_checks": [
+        {
+          "check": "empty",
+          "passed": true
+        },
+        {
+          "check": "nonadjacent_sum",
+          "passed": true
+        },
+        {
+          "check": "trim",
+          "passed": true
+        },
+        {
+          "check": "case_sensitive",
+          "passed": true
+        },
+        {
+          "check": "zero_group",
+          "passed": true
+        },
+        {
+          "check": "negative",
+          "passed": true
+        },
+        {
+          "check": "blank",
+          "passed": true
+        },
+        {
+          "check": "first_order",
+          "passed": true
+        },
+        {
+          "check": "input_immutable",
+          "passed": true
+        }
+      ],
+      "semantic_passed": 9,
+      "semantic_total": 9,
+      "workflow_status": "completed",
+      "stopped_stage": "reviewer",
+      "reason_code": "review_success",
+      "reason": "Current artifact chain passed structural and declared-result checks.",
+      "workflow_ok": true,
+      "protected_files_ok": true,
+      "scope_ok": true,
+      "changed_initial_files": [
+        "solution.py"
+      ],
+      "unexpected_added": [],
+      "success_claims": [
+        "implementer",
+        "reviewer"
+      ],
+      "incorrect_success_candidate": false,
+      "dispatches": [
+        {
+          "case": "aggregation",
+          "effort": "low",
+          "stage": "implementer",
+          "requested_model": "gpt-6-luna",
+          "fork_turns": "none",
+          "prepared_at": "2026-10-04T07:23:12.460663+00:00",
+          "output": "share/aggregation/reviewer/result.md",
+          "lineage": {
+            "revision": "c2217685-bf67-4c4a-86b9-009698e09edb",
+            "input_fingerprints": {
+              "share/aggregation/implementer/impl.md": "a82dcca71b6b8236755b15d4af5c9a3b2bc5c75ae41e6e52399bdfa990bede23"
+            }
+          },
+          "finished_at": "2026-10-04T07:24:52.247422+00:00",
+          "artifact_exists": true
+        },
+        {
+          "case": "aggregation",
+          "effort": "low",
+          "stage": "planner",
+          "requested_model": "gpt-6-luna",
+          "fork_turns": "none",
+          "prepared_at": "2026-10-04T07:20:57.627402+00:00",
+          "output": "share/aggregation/implementer/impl.md",
+          "lineage": {
+            "revision": "4aae321a-bad5-42b1-9857-9a7d0d83bde5",
+            "input_fingerprints": {
+              "share/aggregation/planner/plan.md": "bc69c07cead183539e34182e1a6efd036f62e0acfee6eb767ad2cbefdb5b0f8e"
+            }
+          },
+          "finished_at": "2026-10-04T07:22:53.854860+00:00",
+          "artifact_exists": true
+        },
+        {
+          "case": "aggregation",
+          "effort": "low",
+          "stage": "researcher",
+          "requested_model": "gpt-6-luna",
+          "fork_turns": "none",
+          "prepared_at": "2026-10-04T07:19:07.840545+00:00",
+          "output": "share/aggregation/planner/plan.md",
+          "lineage": {
+            "revision": "c969d9d2-a8c2-4b5a-874d-e286aa786860",
+            "input_fingerprints": {
+              "share/aggregation/researcher/task.md": "e3ba64529b5cdf095bbfaea9b5ef132cfca90fd3be010a0ada57912aae05dfd8"
+            }
+          },
+          "finished_at": "2026-10-04T07:20:25.819623+00:00",
+          "artifact_exists": true
+        },
+        {
+          "case": "aggregation",
+          "effort": "low",
+          "stage": "reviewer",
+          "requested_model": "gpt-6-luna",
+          "fork_turns": "none",
+          "prepared_at": "2026-10-04T07:24:52.364463+00:00",
+          "output": "share/aggregation/reviewer/review.md",
+          "lineage": {
+            "revision": "fd204f18-dcc7-4bab-9dd2-fe1253ac34c9",
+            "input_fingerprints": {
+              "share/aggregation/reviewer/task.md": "e3ba64529b5cdf095bbfaea9b5ef132cfca90fd3be010a0ada57912aae05dfd8",
+              "share/aggregation/reviewer/plan.md": "bc69c07cead183539e34182e1a6efd036f62e0acfee6eb767ad2cbefdb5b0f8e",
+              "share/aggregation/reviewer/impl.md": "a82dcca71b6b8236755b15d4af5c9a3b2bc5c75ae41e6e52399bdfa990bede23",
+              "share/aggregation/reviewer/result.md": "e653ed8714cc86b12583baec2ec16ddf3f849e50fe5d381d4514ceff79f66653"
+            }
+          },
+          "finished_at": "2026-10-04T07:26:46.121185+00:00",
+          "artifact_exists": true
+        },
+        {
+          "case": "aggregation",
+          "effort": "low",
+          "stage": "tasker",
+          "requested_model": "gpt-6-luna",
+          "fork_turns": "none",
+          "prepared_at": "2026-10-04T07:17:28.117039+00:00",
+          "output": "share/aggregation/researcher/task.md",
+          "lineage": {
+            "revision": "35859f1e-1e2c-4489-bf43-f3c9a0a785f5",
+            "input_fingerprints": {
+              "tasker/aggregation.md": "4a42ceef6731e9d47c0edeb61435fa3a90eacc84e7ccd46f9c8500507f2a512a"
+            }
+          },
+          "finished_at": "2026-10-04T07:18:43.416186+00:00",
+          "artifact_exists": true
+        }
+      ]
+    },
+    {
+      "case": "aggregation",
+      "effort": "high",
+      "primary_success": false,
+      "semantic_checks": [
+        {
+          "check": "empty",
+          "passed": true
+        },
+        {
+          "check": "nonadjacent_sum",
+          "passed": false,
+          "error": "AssertionError(([{'sku': 'A', 'delta': 1}, {'sku': 'B', 'delta': 3}], [{'sku': 'B', 'delta': 5}, {'sku': 'A', 'delta': 1}]))"
+        },
+        {
+          "check": "trim",
+          "passed": false,
+          "error": "AssertionError(([{'sku': ' A ', 'delta': 2}, {'sku': 'A', 'delta': 3}], [{'sku': 'A', 'delta': 5}]))"
+        },
+        {
+          "check": "case_sensitive",
+          "passed": false,
+          "error": "AssertionError(([{'sku': 'A', 'delta': 2}, {'sku': 'a', 'delta': 1}], [{'sku': 'a', 'delta': 1}, {'sku': 'A', 'delta': 2}]))"
+        },
+        {
+          "check": "zero_group",
+          "passed": false,
+          "error": "AssertionError(([{'sku': 'X', 'delta': -2}, {'sku': 'Z', 'delta': 0}], [{'sku': 'X', 'delta': 0}, {'sku': 'Z', 'delta': 0}]))"
+        },
+        {
+          "check": "negative",
+          "passed": false,
+          "error": "AssertionError(([{'sku': 'N', 'delta': -3}], [{'sku': 'N', 'delta': -5}]))"
+        },
+        {
+          "check": "blank",
+          "passed": false,
+          "error": "AssertionError(([{'sku': '\\t', 'delta': -4}, {'sku': ' ', 'delta': 9}, {'sku': 'X', 'delta': 1}], [{'sku': 'X', 'delta': 1}]))"
+        },
+        {
+          "check": "first_order",
+          "passed": false,
+          "error": "AssertionError(([{'sku': 'a', 'delta': 2}, {'sku': 'm', 'delta': 3}, {'sku': 'z', 'delta': 1}], [{'sku': 'z', 'delta': 1}, {'sku': 'a', 'delta': 2}, {'sku': 'm', 'delta': 3}]))"
+        },
+        {
+          "check": "input_immutable",
+          "passed": true
+        }
+      ],
+      "semantic_passed": 2,
+      "semantic_total": 9,
+      "workflow_status": "blocked",
+      "stopped_stage": "planner",
+      "reason_code": "artifact_invalid",
+      "reason": "share/aggregation/implementer/impl.md: $.expected_output.implementation_summary_requirements: expected array",
+      "workflow_ok": false,
+      "protected_files_ok": true,
+      "scope_ok": true,
+      "changed_initial_files": [],
+      "unexpected_added": [],
+      "success_claims": [],
+      "incorrect_success_candidate": false,
+      "dispatches": [
+        {
+          "case": "aggregation",
+          "effort": "high",
+          "stage": "planner",
+          "requested_model": "gpt-6-luna",
+          "fork_turns": "none",
+          "prepared_at": "2026-10-04T07:20:57.709175+00:00",
+          "output": "share/aggregation/implementer/impl.md",
+          "lineage": {
+            "revision": "f9837d03-e211-4a3c-b677-0de8d8dd32c9",
+            "input_fingerprints": {
+              "share/aggregation/planner/plan.md": "f434e09ff3a00e8ccf8e1f7550c45b6edfc3034af57352114e279a3448f4a4f8"
+            }
+          },
+          "finished_at": "2026-10-04T07:22:40.025709+00:00",
+          "artifact_exists": true
+        },
+        {
+          "case": "aggregation",
+          "effort": "high",
+          "stage": "researcher",
+          "requested_model": "gpt-6-luna",
+          "fork_turns": "none",
+          "prepared_at": "2026-10-04T07:19:07.924048+00:00",
+          "output": "share/aggregation/planner/plan.md",
+          "lineage": {
+            "revision": "4e600294-c5b6-40fc-b850-4c4f17562fea",
+            "input_fingerprints": {
+              "share/aggregation/researcher/task.md": "b8c3be5bf980483ee1b1f9eb27c8165e94e6003d2f7d35cd89e4ef94c90af02f"
+            }
+          },
+          "finished_at": "2026-10-04T07:20:57.542742+00:00",
+          "artifact_exists": true
+        },
+        {
+          "case": "aggregation",
+          "effort": "high",
+          "stage": "tasker",
+          "requested_model": "gpt-6-luna",
+          "fork_turns": "none",
+          "prepared_at": "2026-10-04T07:17:28.207016+00:00",
+          "output": "share/aggregation/researcher/task.md",
+          "lineage": {
+            "revision": "c275cdc4-9467-4692-9980-b53f8a0f052b",
+            "input_fingerprints": {
+              "tasker/aggregation.md": "4a42ceef6731e9d47c0edeb61435fa3a90eacc84e7ccd46f9c8500507f2a512a"
+            }
+          },
+          "finished_at": "2026-10-04T07:19:07.756355+00:00",
+          "artifact_exists": true
+        }
+      ]
+    },
+    {
+      "case": "conflict",
+      "effort": "low",
+      "primary_success": true,
+      "semantic_checks": [
+        {
+          "check": "explicit_tasker_conflict_block",
+          "passed": true
+        },
+        {
+          "check": "source_unmodified",
+          "passed": true
+        }
+      ],
+      "semantic_passed": 2,
+      "semantic_total": 2,
+      "workflow_status": "blocked",
+      "stopped_stage": "tasker",
+      "reason_code": "stage_blocked",
+      "reason": "Stage reports a blocker; no automatic retry is authorized.",
+      "workflow_ok": true,
+      "protected_files_ok": true,
+      "scope_ok": true,
+      "changed_initial_files": [],
+      "unexpected_added": [],
+      "success_claims": [],
+      "incorrect_success_candidate": false,
+      "dispatches": [
+        {
+          "case": "conflict",
+          "effort": "low",
+          "stage": "tasker",
+          "requested_model": "gpt-6-luna",
+          "fork_turns": "none",
+          "prepared_at": "2026-10-04T07:23:12.626934+00:00",
+          "output": "share/conflict/researcher/task.md",
+          "lineage": {
+            "revision": "fb463f09-d98b-442a-b77b-c1c3c8dacf85",
+            "input_fingerprints": {
+              "tasker/conflict.md": "b10343ec293b423adad6ef129d93c1aa8870ab49d7573e76336d47059e3731fb"
+            }
+          },
+          "finished_at": "2026-10-04T07:25:21.941194+00:00",
+          "artifact_exists": true
+        }
+      ]
+    },
+    {
+      "case": "conflict",
+      "effort": "high",
+      "primary_success": true,
+      "semantic_checks": [
+        {
+          "check": "explicit_tasker_conflict_block",
+          "passed": true
+        },
+        {
+          "check": "source_unmodified",
+          "passed": true
+        }
+      ],
+      "semantic_passed": 2,
+      "semantic_total": 2,
+      "workflow_status": "waiting_user",
+      "stopped_stage": "tasker",
+      "reason_code": "user_decision",
+      "reason": "Resolve the structured blocking question, approval or proposed task update.",
+      "workflow_ok": true,
+      "protected_files_ok": true,
+      "scope_ok": true,
+      "changed_initial_files": [],
+      "unexpected_added": [],
+      "success_claims": [],
+      "incorrect_success_candidate": false,
+      "dispatches": [
+        {
+          "case": "conflict",
+          "effort": "high",
+          "stage": "tasker",
+          "requested_model": "gpt-6-luna",
+          "fork_turns": "none",
+          "prepared_at": "2026-10-04T07:23:12.545580+00:00",
+          "output": "share/conflict/researcher/task.md",
+          "lineage": {
+            "revision": "1a58ede6-ddc0-4a67-b1a7-34f5473c34df",
+            "input_fingerprints": {
+              "tasker/conflict.md": "b10343ec293b423adad6ef129d93c1aa8870ab49d7573e76336d47059e3731fb"
+            }
+          },
+          "finished_at": "2026-10-04T07:24:52.282920+00:00",
+          "artifact_exists": true
+        }
+      ]
+    },
+    {
+      "case": "tickets",
+      "effort": "low",
+      "primary_success": false,
+      "semantic_checks": [
+        {
+          "check": "empty",
+          "passed": true
+        },
+        {
+          "check": "closed_old",
+          "passed": false,
+          "error": "AssertionError((['x'], []))"
+        },
+        {
+          "check": "priority_boundary",
+          "passed": true
+        },
+        {
+          "check": "age_boundary",
+          "passed": true
+        },
+        {
+          "check": "priority_order",
+          "passed": false,
+          "error": "AssertionError((['a', 'b'], ['b', 'a']))"
+        },
+        {
+          "check": "age_order",
+          "passed": false,
+          "error": "AssertionError((['a', 'b'], ['b', 'a']))"
+        },
+        {
+          "check": "stable_ties",
+          "passed": true
+        },
+        {
+          "check": "opaque_message",
+          "passed": true
+        },
+        {
+          "check": "input_immutable",
+          "passed": true
+        }
+      ],
+      "semantic_passed": 6,
+      "semantic_total": 9,
+      "workflow_status": "blocked",
+      "stopped_stage": "researcher",
+      "reason_code": "artifact_invalid",
+      "reason": "share/tickets/planner/plan.md: Invalid JSON artifact: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+      "workflow_ok": false,
+      "protected_files_ok": true,
+      "scope_ok": true,
+      "changed_initial_files": [],
+      "unexpected_added": [],
+      "success_claims": [],
+      "incorrect_success_candidate": false,
+      "dispatches": [
+        {
+          "case": "tickets",
+          "effort": "low",
+          "stage": "researcher",
+          "requested_model": "gpt-6-luna",
+          "fork_turns": "none",
+          "prepared_at": "2026-10-04T07:27:11.283991+00:00",
+          "output": "share/tickets/planner/plan.md",
+          "lineage": {
+            "revision": "12374aff-e990-4d83-8e6f-93585f33d99d",
+            "input_fingerprints": {
+              "share/tickets/researcher/task.md": "5711c2a0f8b7d0f2806d4c90007588be4bec86ab441dd9a0f632caa110ad758b"
+            }
+          },
+          "finished_at": "2026-10-04T07:29:21.446326+00:00",
+          "artifact_exists": true
+        },
+        {
+          "case": "tickets",
+          "effort": "low",
+          "stage": "tasker",
+          "requested_model": "gpt-6-luna",
+          "fork_turns": "none",
+          "prepared_at": "2026-10-04T07:25:22.039228+00:00",
+          "output": "share/tickets/researcher/task.md",
+          "lineage": {
+            "revision": "2297ca82-1b05-4469-8dd7-2b94cdece752",
+            "input_fingerprints": {
+              "tasker/tickets.md": "0a71e05d6d374ebf6e59dcc33a85fde4cb1293f9218d558e9433e35f391b5cd8"
+            }
+          },
+          "finished_at": "2026-10-04T07:26:46.158661+00:00",
+          "artifact_exists": true
+        }
+      ]
+    },
+    {
+      "case": "tickets",
+      "effort": "high",
+      "primary_success": false,
+      "semantic_checks": [
+        {
+          "check": "empty",
+          "passed": true
+        },
+        {
+          "check": "closed_old",
+          "passed": false,
+          "error": "AssertionError((['x'], []))"
+        },
+        {
+          "check": "priority_boundary",
+          "passed": true
+        },
+        {
+          "check": "age_boundary",
+          "passed": true
+        },
+        {
+          "check": "priority_order",
+          "passed": false,
+          "error": "AssertionError((['a', 'b'], ['b', 'a']))"
+        },
+        {
+          "check": "age_order",
+          "passed": false,
+          "error": "AssertionError((['a', 'b'], ['b', 'a']))"
+        },
+        {
+          "check": "stable_ties",
+          "passed": true
+        },
+        {
+          "check": "opaque_message",
+          "passed": true
+        },
+        {
+          "check": "input_immutable",
+          "passed": true
+        }
+      ],
+      "semantic_passed": 6,
+      "semantic_total": 9,
+      "workflow_status": "ready",
+      "stopped_stage": "tasker",
+      "reason_code": "stage_ready",
+      "reason": "Run researcher with the current required inputs.",
+      "workflow_ok": false,
+      "protected_files_ok": true,
+      "scope_ok": true,
+      "changed_initial_files": [],
+      "unexpected_added": [],
+      "success_claims": [],
+      "incorrect_success_candidate": false,
+      "dispatches": [
+        {
+          "case": "tickets",
+          "effort": "high",
+          "stage": "researcher",
+          "requested_model": "gpt-6-luna",
+          "fork_turns": "none",
+          "prepared_at": "2026-10-04T07:27:11.367352+00:00",
+          "output": "share/tickets/planner/plan.md",
+          "lineage": {
+            "revision": "0b6523f5-4d69-4ec2-ae91-0102eaf33863",
+            "input_fingerprints": {
+              "share/tickets/researcher/task.md": "27990335751501e89dceeeb5fac31ed3724add40a7fc5dac94c5f9db84238e56"
+            }
+          },
+          "finished_at": "2026-10-04T07:28:31.870130+00:00",
+          "artifact_exists": false
+        },
+        {
+          "case": "tickets",
+          "effort": "high",
+          "stage": "tasker",
+          "requested_model": "gpt-6-luna",
+          "fork_turns": "none",
+          "prepared_at": "2026-10-04T07:25:22.121840+00:00",
+          "output": "share/tickets/researcher/task.md",
+          "lineage": {
+            "revision": "a25456f9-144d-40de-9fd7-a1c0874b22ad",
+            "input_fingerprints": {
+              "tasker/tickets.md": "0a71e05d6d374ebf6e59dcc33a85fde4cb1293f9218d558e9433e35f391b5cd8"
+            }
+          },
+          "finished_at": "2026-10-04T07:27:11.195547+00:00",
+          "artifact_exists": true
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Conflict semantic evidence requires manual reading.",
+    "Filesystem authorization not OS isolation.",
+    "No complete hidden reasoning/tool trace or token usage available.",
+    "One run per condition; no statistical or workflow-causal inference."
+  ]
+}

@@ -1,0 +1,431 @@
+test_changed_plan_invalidates_implementation (agent_loop_poc.test_integrity.IntegrityTests.test_changed_plan_invalidates_implementation) ... FAIL
+test_complete_current_chain (agent_loop_poc.test_integrity.IntegrityTests.test_complete_current_chain) ... ok
+test_duplicate_keys_and_nonfinite_json_rejected (agent_loop_poc.test_integrity.IntegrityTests.test_duplicate_keys_and_nonfinite_json_rejected) ... 
+  test_duplicate_keys_and_nonfinite_json_rejected (agent_loop_poc.test_integrity.IntegrityTests.test_duplicate_keys_and_nonfinite_json_rejected) (text='{"status":"blocked","schema_ve') ... FAIL
+  test_duplicate_keys_and_nonfinite_json_rejected (agent_loop_poc.test_integrity.IntegrityTests.test_duplicate_keys_and_nonfinite_json_rejected) (text='{"schema_version": "workflow_a') ... FAIL
+test_empty_questions_do_not_wait (agent_loop_poc.test_integrity.IntegrityTests.test_empty_questions_do_not_wait) ... FAIL
+test_malformed_intermediate_never_advances (agent_loop_poc.test_integrity.IntegrityTests.test_malformed_intermediate_never_advances) ... 
+  test_malformed_intermediate_never_advances (agent_loop_poc.test_integrity.IntegrityTests.test_malformed_intermediate_never_advances) (content='not json') ... FAIL
+  test_malformed_intermediate_never_advances (agent_loop_poc.test_integrity.IntegrityTests.test_malformed_intermediate_never_advances) (content='{}') ... FAIL
+  test_malformed_intermediate_never_advances (agent_loop_poc.test_integrity.IntegrityTests.test_malformed_intermediate_never_advances) (content='[]') ... FAIL
+  test_malformed_intermediate_never_advances (agent_loop_poc.test_integrity.IntegrityTests.test_malformed_intermediate_never_advances) (content='{"status":"invented"}') ... FAIL
+  test_malformed_intermediate_never_advances (agent_loop_poc.test_integrity.IntegrityTests.test_malformed_intermediate_never_advances) (content='Status: ready\n') ... FAIL
+test_missing_review_bundle_blocks_review_dispatch (agent_loop_poc.test_integrity.IntegrityTests.test_missing_review_bundle_blocks_review_dispatch) ... FAIL
+test_old_review_cannot_accept_changed_task (agent_loop_poc.test_integrity.IntegrityTests.test_old_review_cannot_accept_changed_task) ... FAIL
+test_only_blocking_questions_wait (agent_loop_poc.test_integrity.IntegrityTests.test_only_blocking_questions_wait) ... 
+  test_only_blocking_questions_wait (agent_loop_poc.test_integrity.IntegrityTests.test_only_blocking_questions_wait) (blocking=False) ... FAIL
+test_pending_task_update_waits (agent_loop_poc.test_integrity.IntegrityTests.test_pending_task_update_waits) ... FAIL
+test_required_fields_and_nested_types (agent_loop_poc.test_integrity.IntegrityTests.test_required_fields_and_nested_types) ... 
+  test_required_fields_and_nested_types (agent_loop_poc.test_integrity.IntegrityTests.test_required_fields_and_nested_types) (mutation='missing_goal') ... FAIL
+  test_required_fields_and_nested_types (agent_loop_poc.test_integrity.IntegrityTests.test_required_fields_and_nested_types) (mutation='string_bool') ... FAIL
+  test_required_fields_and_nested_types (agent_loop_poc.test_integrity.IntegrityTests.test_required_fields_and_nested_types) (mutation='missing_evidence_source') ... FAIL
+  test_required_fields_and_nested_types (agent_loop_poc.test_integrity.IntegrityTests.test_required_fields_and_nested_types) (mutation='bad_target') ... FAIL
+test_review_cannot_override_failed_implementation (agent_loop_poc.test_integrity.IntegrityTests.test_review_cannot_override_failed_implementation) ... FAIL
+test_review_mirrors_must_match (agent_loop_poc.test_integrity.IntegrityTests.test_review_mirrors_must_match) ... FAIL
+test_review_without_predecessors_cannot_complete (agent_loop_poc.test_integrity.IntegrityTests.test_review_without_predecessors_cannot_complete) ... FAIL
+test_structured_environment_blocker_is_not_agent_blame (agent_loop_poc.test_integrity.IntegrityTests.test_structured_environment_blocker_is_not_agent_blame) ... ERROR
+test_success_cannot_hide_required_check_failure (agent_loop_poc.test_integrity.IntegrityTests.test_success_cannot_hide_required_check_failure) ... FAIL
+test_sync_does_not_modify_stage_artifacts (agent_loop_poc.test_integrity.IntegrityTests.test_sync_does_not_modify_stage_artifacts) ... ok
+test_task_id_cannot_escape_repository (agent_loop_poc.test_integrity.IntegrityTests.test_task_id_cannot_escape_repository) ... 
+  test_task_id_cannot_escape_repository (agent_loop_poc.test_integrity.IntegrityTests.test_task_id_cannot_escape_repository) (task_id='../other') ... FAIL
+  test_task_id_cannot_escape_repository (agent_loop_poc.test_integrity.IntegrityTests.test_task_id_cannot_escape_repository) (task_id='/tmp/other') ... FAIL
+  test_task_id_cannot_escape_repository (agent_loop_poc.test_integrity.IntegrityTests.test_task_id_cannot_escape_repository) (task_id='a/b') ... FAIL
+  test_task_id_cannot_escape_repository (agent_loop_poc.test_integrity.IntegrityTests.test_task_id_cannot_escape_repository) (task_id='') ... FAIL
+  test_task_id_cannot_escape_repository (agent_loop_poc.test_integrity.IntegrityTests.test_task_id_cannot_escape_repository) (task_id='.') ... FAIL
+  test_task_id_cannot_escape_repository (agent_loop_poc.test_integrity.IntegrityTests.test_task_id_cannot_escape_repository) (task_id='..') ... FAIL
+test_unversioned_artifact_requires_regeneration (agent_loop_poc.test_integrity.IntegrityTests.test_unversioned_artifact_requires_regeneration) ... FAIL
+test_valid_failed_review_returns_to_planner (agent_loop_poc.test_integrity.IntegrityTests.test_valid_failed_review_returns_to_planner) ... FAIL
+test_wrong_task_or_stage_is_rejected (agent_loop_poc.test_integrity.IntegrityTests.test_wrong_task_or_stage_is_rejected) ... 
+  test_wrong_task_or_stage_is_rejected (agent_loop_poc.test_integrity.IntegrityTests.test_wrong_task_or_stage_is_rejected) (field='task_id') ... FAIL
+  test_wrong_task_or_stage_is_rejected (agent_loop_poc.test_integrity.IntegrityTests.test_wrong_task_or_stage_is_rejected) (field='produced_by') ... FAIL
+  test_wrong_task_or_stage_is_rejected (agent_loop_poc.test_integrity.IntegrityTests.test_wrong_task_or_stage_is_rejected) (field='artifact_type') ... FAIL
+  test_wrong_task_or_stage_is_rejected (agent_loop_poc.test_integrity.IntegrityTests.test_wrong_task_or_stage_is_rejected) (field='schema_version') ... FAIL
+
+======================================================================
+ERROR: test_structured_environment_blocker_is_not_agent_blame (agent_loop_poc.test_integrity.IntegrityTests.test_structured_environment_blocker_is_not_agent_blame)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 209, in test_structured_environment_blocker_is_not_agent_blame
+    self.assertEqual(self.state()["blocker"], blocker)
+                     ~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'blocker'
+
+======================================================================
+FAIL: test_changed_plan_invalidates_implementation (agent_loop_poc.test_integrity.IntegrityTests.test_changed_plan_invalidates_implementation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 129, in test_changed_plan_invalidates_implementation
+    self.assertEqual(state["status"], "needs_revision")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'completed' != 'needs_revision'
+- completed
++ needs_revision
+
+
+======================================================================
+FAIL: test_duplicate_keys_and_nonfinite_json_rejected (agent_loop_poc.test_integrity.IntegrityTests.test_duplicate_keys_and_nonfinite_json_rejected) (text='{"status":"blocked","schema_ve')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 164, in test_duplicate_keys_and_nonfinite_json_rejected
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ready' != 'blocked'
+- ready
++ blocked
+
+
+======================================================================
+FAIL: test_duplicate_keys_and_nonfinite_json_rejected (agent_loop_poc.test_integrity.IntegrityTests.test_duplicate_keys_and_nonfinite_json_rejected) (text='{"schema_version": "workflow_a')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 164, in test_duplicate_keys_and_nonfinite_json_rejected
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ready' != 'blocked'
+- ready
++ blocked
+
+
+======================================================================
+FAIL: test_empty_questions_do_not_wait (agent_loop_poc.test_integrity.IntegrityTests.test_empty_questions_do_not_wait)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 107, in test_empty_questions_do_not_wait
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'waiting_user' != 'blocked'
+- waiting_user
++ blocked
+
+
+======================================================================
+FAIL: test_malformed_intermediate_never_advances (agent_loop_poc.test_integrity.IntegrityTests.test_malformed_intermediate_never_advances) (content='not json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 102, in test_malformed_intermediate_never_advances
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ready' != 'blocked'
+- ready
++ blocked
+
+
+======================================================================
+FAIL: test_malformed_intermediate_never_advances (agent_loop_poc.test_integrity.IntegrityTests.test_malformed_intermediate_never_advances) (content='{}')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 102, in test_malformed_intermediate_never_advances
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ready' != 'blocked'
+- ready
++ blocked
+
+
+======================================================================
+FAIL: test_malformed_intermediate_never_advances (agent_loop_poc.test_integrity.IntegrityTests.test_malformed_intermediate_never_advances) (content='[]')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 102, in test_malformed_intermediate_never_advances
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ready' != 'blocked'
+- ready
++ blocked
+
+
+======================================================================
+FAIL: test_malformed_intermediate_never_advances (agent_loop_poc.test_integrity.IntegrityTests.test_malformed_intermediate_never_advances) (content='{"status":"invented"}')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 102, in test_malformed_intermediate_never_advances
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ready' != 'blocked'
+- ready
++ blocked
+
+
+======================================================================
+FAIL: test_malformed_intermediate_never_advances (agent_loop_poc.test_integrity.IntegrityTests.test_malformed_intermediate_never_advances) (content='Status: ready\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 102, in test_malformed_intermediate_never_advances
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ready' != 'blocked'
+- ready
++ blocked
+
+
+======================================================================
+FAIL: test_missing_review_bundle_blocks_review_dispatch (agent_loop_poc.test_integrity.IntegrityTests.test_missing_review_bundle_blocks_review_dispatch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 173, in test_missing_review_bundle_blocks_review_dispatch
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ready' != 'blocked'
+- ready
++ blocked
+
+
+======================================================================
+FAIL: test_old_review_cannot_accept_changed_task (agent_loop_poc.test_integrity.IntegrityTests.test_old_review_cannot_accept_changed_task)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 122, in test_old_review_cannot_accept_changed_task
+    self.assertEqual(state["status"], "needs_revision")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'completed' != 'needs_revision'
+- completed
++ needs_revision
+
+
+======================================================================
+FAIL: test_only_blocking_questions_wait (agent_loop_poc.test_integrity.IntegrityTests.test_only_blocking_questions_wait) (blocking=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 115, in test_only_blocking_questions_wait
+    self.assertEqual(self.state()["needs_user_input"], blocking)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True != False
+
+======================================================================
+FAIL: test_pending_task_update_waits (agent_loop_poc.test_integrity.IntegrityTests.test_pending_task_update_waits)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 203, in test_pending_task_update_waits
+    self.assertEqual(self.state()["status"], "waiting_user")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ready' != 'waiting_user'
+- ready
++ waiting_user
+
+
+======================================================================
+FAIL: test_required_fields_and_nested_types (agent_loop_poc.test_integrity.IntegrityTests.test_required_fields_and_nested_types) (mutation='missing_goal')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 157, in test_required_fields_and_nested_types
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ready' != 'blocked'
+- ready
++ blocked
+
+
+======================================================================
+FAIL: test_required_fields_and_nested_types (agent_loop_poc.test_integrity.IntegrityTests.test_required_fields_and_nested_types) (mutation='string_bool')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 157, in test_required_fields_and_nested_types
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ready' != 'blocked'
+- ready
++ blocked
+
+
+======================================================================
+FAIL: test_required_fields_and_nested_types (agent_loop_poc.test_integrity.IntegrityTests.test_required_fields_and_nested_types) (mutation='missing_evidence_source')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 157, in test_required_fields_and_nested_types
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ready' != 'blocked'
+- ready
++ blocked
+
+
+======================================================================
+FAIL: test_required_fields_and_nested_types (agent_loop_poc.test_integrity.IntegrityTests.test_required_fields_and_nested_types) (mutation='bad_target')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 157, in test_required_fields_and_nested_types
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ready' != 'blocked'
+- ready
++ blocked
+
+
+======================================================================
+FAIL: test_review_cannot_override_failed_implementation (agent_loop_poc.test_integrity.IntegrityTests.test_review_cannot_override_failed_implementation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 189, in test_review_cannot_override_failed_implementation
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'completed' != 'blocked'
+- completed
++ blocked
+
+
+======================================================================
+FAIL: test_review_mirrors_must_match (agent_loop_poc.test_integrity.IntegrityTests.test_review_mirrors_must_match)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 169, in test_review_mirrors_must_match
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'completed' != 'blocked'
+- completed
++ blocked
+
+
+======================================================================
+FAIL: test_review_without_predecessors_cannot_complete (agent_loop_poc.test_integrity.IntegrityTests.test_review_without_predecessors_cannot_complete)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 95, in test_review_without_predecessors_cannot_complete
+    self.assertEqual(state["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'completed' != 'blocked'
+- completed
++ blocked
+
+
+======================================================================
+FAIL: test_success_cannot_hide_required_check_failure (agent_loop_poc.test_integrity.IntegrityTests.test_success_cannot_hide_required_check_failure)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 182, in test_success_cannot_hide_required_check_failure
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'completed' != 'blocked'
+- completed
++ blocked
+
+
+======================================================================
+FAIL: test_task_id_cannot_escape_repository (agent_loop_poc.test_integrity.IntegrityTests.test_task_id_cannot_escape_repository) (task_id='../other')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 215, in test_task_id_cannot_escape_repository
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_task_id_cannot_escape_repository (agent_loop_poc.test_integrity.IntegrityTests.test_task_id_cannot_escape_repository) (task_id='/tmp/other')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 215, in test_task_id_cannot_escape_repository
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_task_id_cannot_escape_repository (agent_loop_poc.test_integrity.IntegrityTests.test_task_id_cannot_escape_repository) (task_id='a/b')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 215, in test_task_id_cannot_escape_repository
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_task_id_cannot_escape_repository (agent_loop_poc.test_integrity.IntegrityTests.test_task_id_cannot_escape_repository) (task_id='')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 215, in test_task_id_cannot_escape_repository
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_task_id_cannot_escape_repository (agent_loop_poc.test_integrity.IntegrityTests.test_task_id_cannot_escape_repository) (task_id='.')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 215, in test_task_id_cannot_escape_repository
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_task_id_cannot_escape_repository (agent_loop_poc.test_integrity.IntegrityTests.test_task_id_cannot_escape_repository) (task_id='..')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 215, in test_task_id_cannot_escape_repository
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_unversioned_artifact_requires_regeneration (agent_loop_poc.test_integrity.IntegrityTests.test_unversioned_artifact_requires_regeneration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 136, in test_unversioned_artifact_requires_regeneration
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ready' != 'blocked'
+- ready
++ blocked
+
+
+======================================================================
+FAIL: test_valid_failed_review_returns_to_planner (agent_loop_poc.test_integrity.IntegrityTests.test_valid_failed_review_returns_to_planner)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 195, in test_valid_failed_review_returns_to_planner
+    self.assertEqual(self.state()["status"], "needs_revision")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'waiting_user' != 'needs_revision'
+- waiting_user
++ needs_revision
+
+
+======================================================================
+FAIL: test_wrong_task_or_stage_is_rejected (agent_loop_poc.test_integrity.IntegrityTests.test_wrong_task_or_stage_is_rejected) (field='task_id')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 142, in test_wrong_task_or_stage_is_rejected
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ready' != 'blocked'
+- ready
++ blocked
+
+
+======================================================================
+FAIL: test_wrong_task_or_stage_is_rejected (agent_loop_poc.test_integrity.IntegrityTests.test_wrong_task_or_stage_is_rejected) (field='produced_by')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 142, in test_wrong_task_or_stage_is_rejected
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ready' != 'blocked'
+- ready
++ blocked
+
+
+======================================================================
+FAIL: test_wrong_task_or_stage_is_rejected (agent_loop_poc.test_integrity.IntegrityTests.test_wrong_task_or_stage_is_rejected) (field='artifact_type')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 142, in test_wrong_task_or_stage_is_rejected
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ready' != 'blocked'
+- ready
++ blocked
+
+
+======================================================================
+FAIL: test_wrong_task_or_stage_is_rejected (agent_loop_poc.test_integrity.IntegrityTests.test_wrong_task_or_stage_is_rejected) (field='schema_version')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_integrity.py", line 142, in test_wrong_task_or_stage_is_rejected
+    self.assertEqual(self.state()["status"], "blocked")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ready' != 'blocked'
+- ready
++ blocked
+
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.034s
+
+FAILED (failures=33, errors=1)

@@ -1,0 +1,15 @@
+test_authorization_cannot_transfer_between_roots_with_same_task_id (agent_loop_poc.test_handoffs.OuterDispatchTests.test_authorization_cannot_transfer_between_roots_with_same_task_id) ... FAIL
+
+======================================================================
+FAIL: test_authorization_cannot_transfer_between_roots_with_same_task_id (agent_loop_poc.test_handoffs.OuterDispatchTests.test_authorization_cannot_transfer_between_roots_with_same_task_id)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yuki/workspace/workflow/agent_loop_poc/test_handoffs.py", line 173, in test_authorization_cannot_transfer_between_roots_with_same_task_id
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+FAILED (failures=1)

@@ -1,0 +1,82 @@
+{
+  "task_id": "workflow-integrity-20261003",
+  "artifact_checks": [
+    {
+      "stage": "tasker",
+      "contract": "passed",
+      "input_lineage": "passed"
+    },
+    {
+      "stage": "researcher",
+      "contract": "passed",
+      "input_lineage": "passed"
+    },
+    {
+      "stage": "planner",
+      "contract": "passed",
+      "input_lineage": "passed"
+    },
+    {
+      "stage": "implementer",
+      "contract": "passed",
+      "input_lineage": "passed"
+    },
+    {
+      "stage": "reviewer",
+      "contract": "passed",
+      "input_lineage": "passed"
+    }
+  ],
+  "review_mirrors": "passed",
+  "cli_checks": [
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "agent_loop_poc/loop.py",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "0.2.0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "agent_loop_poc/loop.py",
+        "sync",
+        "workflow-integrity-20261003"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"schema_version\": \"agent_loop_poc.v2\",\n  \"task_id\": \"workflow-integrity-20261003\",\n  \"status\": \"completed\",\n  \"current_stage\": \"reviewer\",\n  \"next_stage\": null,\n  \"last_completed_stage\": \"reviewer\",\n  \"return_target\": null,\n  \"needs_user_input\": false,\n  \"reason\": \"Current artifact chain passed structural and declared-result checks.\",\n  \"reason_code\": \"review_success\",\n  \"blocker\": null,\n  \"invalidated_artifacts\": [],\n  \"artifacts\": {\n    \"tasker_input\": true,\n    \"researcher_task\": true,\n    \"planner_plan\": true,\n    \"implementer_impl\": true,\n    \"reviewer_result\": true,\n    \"reviewer_review\": true\n  },\n  \"history\": [\n    {\n      \"at\": \"2026-10-03T14:04:34+00:00\",\n      \"event\": \"sync\",\n      \"status\": \"completed\",\n      \"current_stage\": \"reviewer\",\n      \"next_stage\": null,\n      \"reason_code\": \"review_success\"\n    }\n  ],\n  \"updated_at\": \"2026-10-03T14:04:34+00:00\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "agent_loop_poc/loop.py",
+        "status",
+        "workflow-integrity-20261003"
+      ],
+      "exit_code": 0,
+      "stdout": "task=workflow-integrity-20261003 status=completed current=reviewer next=None needs_user_input=False\nreview_success: Current artifact chain passed structural and declared-result checks.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "agent_loop_poc/loop.py",
+        "next",
+        "workflow-integrity-20261003"
+      ],
+      "exit_code": 0,
+      "stdout": "done\nreview_success: Current artifact chain passed structural and declared-result checks.\n",
+      "stderr": ""
+    }
+  ],
+  "read_only_status_next": "passed",
+  "artifact_bytes_preserved": "passed"
+}

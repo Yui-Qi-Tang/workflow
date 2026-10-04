@@ -86,6 +86,15 @@ Object requirements:
 - Do not include Markdown headings, code fences, or prose outside the JSON
   object.
 
+## Saved-File Validation
+
+After writing your required output, follow the root saved-output validation rule:
+run the read-only `validate` command for this task and your stage against the
+actual file. Report the observed exit status and digest outside the JSON artifact.
+Do not announce handoff readiness if validation failed or was not run. Correct
+only your own in-scope artifact, respect task retry limits, and validate again.
+A valid blocked artifact does not authorize downstream execution.
+
 ## Output Only
 
 Write only the JSON content intended for `./share/{task_id}/researcher/task.md`.

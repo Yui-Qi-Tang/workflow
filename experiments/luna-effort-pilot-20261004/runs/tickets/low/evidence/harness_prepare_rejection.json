@@ -1,0 +1,6 @@
+{
+  "command": "harness.py prepare tickets low planner",
+  "exit_code": 1,
+  "agent_dispatched": false,
+  "reason": "Orchestrator attempted prepare after researcher finish; frozen gate rejected invalid predecessor before prompt creation or model dispatch. No retry or artifact change."
+}

@@ -1,0 +1,17 @@
+{
+  "case": "aggregation",
+  "effort": "low",
+  "stage": "researcher",
+  "requested_model": "gpt-6-luna",
+  "fork_turns": "none",
+  "prepared_at": "2026-10-04T07:19:07.840545+00:00",
+  "output": "share/aggregation/planner/plan.md",
+  "lineage": {
+    "revision": "c969d9d2-a8c2-4b5a-874d-e286aa786860",
+    "input_fingerprints": {
+      "share/aggregation/researcher/task.md": "e3ba64529b5cdf095bbfaea9b5ef132cfca90fd3be010a0ada57912aae05dfd8"
+    }
+  },
+  "finished_at": "2026-10-04T07:20:25.819623+00:00",
+  "artifact_exists": true
+}

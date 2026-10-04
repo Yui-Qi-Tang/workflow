@@ -1,0 +1,71 @@
+[
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-B",
+      "/Users/yuki/workspace/workflow/agent_loop_poc/loop.py",
+      "validate",
+      "handoff-repair-20261004",
+      "tasker"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"schema_version\": \"agent_loop_poc.v2\",\n  \"task_id\": \"handoff-repair-20261004\",\n  \"status\": \"validated\",\n  \"current_stage\": \"tasker\",\n  \"next_stage\": null,\n  \"last_completed_stage\": \"tasker\",\n  \"return_target\": null,\n  \"needs_user_input\": false,\n  \"reason\": \"Current prefix and saved artifact passed validation; this does not authorize routing.\",\n  \"reason_code\": \"artifact_valid\",\n  \"blocker\": null,\n  \"invalidated_artifacts\": [],\n  \"artifacts\": {\n    \"tasker_input\": true,\n    \"researcher_task\": true,\n    \"planner_plan\": true,\n    \"implementer_impl\": true,\n    \"reviewer_result\": false,\n    \"reviewer_review\": false\n  },\n  \"history\": [],\n  \"updated_at\": \"2026-10-04T07:58:34+00:00\",\n  \"validated_artifact\": {\n    \"path\": \"share/handoff-repair-20261004/researcher/task.md\",\n    \"sha256\": \"2625f2f50cd6cf9988170c5be54c468108c559f9c2230ccc3c84bd5161fcd90c\"\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-B",
+      "/Users/yuki/workspace/workflow/agent_loop_poc/loop.py",
+      "validate",
+      "handoff-repair-20261004",
+      "researcher"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"schema_version\": \"agent_loop_poc.v2\",\n  \"task_id\": \"handoff-repair-20261004\",\n  \"status\": \"validated\",\n  \"current_stage\": \"researcher\",\n  \"next_stage\": null,\n  \"last_completed_stage\": \"researcher\",\n  \"return_target\": null,\n  \"needs_user_input\": false,\n  \"reason\": \"Current prefix and saved artifact passed validation; this does not authorize routing.\",\n  \"reason_code\": \"artifact_valid\",\n  \"blocker\": null,\n  \"invalidated_artifacts\": [],\n  \"artifacts\": {\n    \"tasker_input\": true,\n    \"researcher_task\": true,\n    \"planner_plan\": true,\n    \"implementer_impl\": true,\n    \"reviewer_result\": false,\n    \"reviewer_review\": false\n  },\n  \"history\": [],\n  \"updated_at\": \"2026-10-04T07:58:34+00:00\",\n  \"validated_artifact\": {\n    \"path\": \"share/handoff-repair-20261004/planner/plan.md\",\n    \"sha256\": \"3f30aef003e7b7dc07f1383e00a0d7886397266f0515c61ed8133aaa7a76723a\"\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-B",
+      "/Users/yuki/workspace/workflow/agent_loop_poc/loop.py",
+      "validate",
+      "handoff-repair-20261004",
+      "planner"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"schema_version\": \"agent_loop_poc.v2\",\n  \"task_id\": \"handoff-repair-20261004\",\n  \"status\": \"validated\",\n  \"current_stage\": \"planner\",\n  \"next_stage\": null,\n  \"last_completed_stage\": \"planner\",\n  \"return_target\": null,\n  \"needs_user_input\": false,\n  \"reason\": \"Current prefix and saved artifact passed validation; this does not authorize routing.\",\n  \"reason_code\": \"artifact_valid\",\n  \"blocker\": null,\n  \"invalidated_artifacts\": [],\n  \"artifacts\": {\n    \"tasker_input\": true,\n    \"researcher_task\": true,\n    \"planner_plan\": true,\n    \"implementer_impl\": true,\n    \"reviewer_result\": false,\n    \"reviewer_review\": false\n  },\n  \"history\": [],\n  \"updated_at\": \"2026-10-04T07:58:34+00:00\",\n  \"validated_artifact\": {\n    \"path\": \"share/handoff-repair-20261004/implementer/impl.md\",\n    \"sha256\": \"66ed53b7dd1707b4da5b87da7681c30ca2c42ca55c744bc4ee26a8ef9aa3ddd5\"\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-B",
+      "/Users/yuki/workspace/workflow/agent_loop_poc/loop.py",
+      "--root",
+      "/Users/yuki/workspace/workflow/experiments/luna-effort-pilot-20261004/runs/aggregation/high",
+      "validate",
+      "aggregation",
+      "planner"
+    ],
+    "exit_code": 1,
+    "stdout": "{\n  \"schema_version\": \"agent_loop_poc.v2\",\n  \"task_id\": \"aggregation\",\n  \"status\": \"blocked\",\n  \"current_stage\": \"planner\",\n  \"next_stage\": null,\n  \"last_completed_stage\": \"researcher\",\n  \"return_target\": null,\n  \"needs_user_input\": false,\n  \"reason\": \"share/aggregation/implementer/impl.md: $.expected_output.implementation_summary_requirements: expected array\",\n  \"reason_code\": \"artifact_invalid\",\n  \"blocker\": null,\n  \"invalidated_artifacts\": [],\n  \"artifacts\": {\n    \"tasker_input\": true,\n    \"researcher_task\": true,\n    \"planner_plan\": true,\n    \"implementer_impl\": true,\n    \"reviewer_result\": false,\n    \"reviewer_review\": false\n  },\n  \"history\": [],\n  \"updated_at\": \"2026-10-04T07:58:34+00:00\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-B",
+      "/Users/yuki/workspace/workflow/agent_loop_poc/loop.py",
+      "--root",
+      "/Users/yuki/workspace/workflow/experiments/luna-effort-pilot-20261004/runs/tickets/low",
+      "validate",
+      "tickets",
+      "researcher"
+    ],
+    "exit_code": 1,
+    "stdout": "{\n  \"schema_version\": \"agent_loop_poc.v2\",\n  \"task_id\": \"tickets\",\n  \"status\": \"blocked\",\n  \"current_stage\": \"researcher\",\n  \"next_stage\": null,\n  \"last_completed_stage\": \"tasker\",\n  \"return_target\": null,\n  \"needs_user_input\": false,\n  \"reason\": \"share/tickets/planner/plan.md: Invalid JSON artifact: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)\",\n  \"reason_code\": \"artifact_invalid\",\n  \"blocker\": null,\n  \"invalidated_artifacts\": [],\n  \"artifacts\": {\n    \"tasker_input\": true,\n    \"researcher_task\": true,\n    \"planner_plan\": true,\n    \"implementer_impl\": false,\n    \"reviewer_result\": false,\n    \"reviewer_review\": false\n  },\n  \"history\": [],\n  \"updated_at\": \"2026-10-04T07:58:34+00:00\"\n}\n",
+    "stderr": ""
+  }
+]

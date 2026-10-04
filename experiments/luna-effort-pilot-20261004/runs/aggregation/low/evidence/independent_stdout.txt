@@ -1,0 +1,1 @@
+[{"check": "empty", "passed": true}, {"check": "nonadjacent_sum", "passed": true}, {"check": "trim", "passed": true}, {"check": "case_sensitive", "passed": true}, {"check": "zero_group", "passed": true}, {"check": "negative", "passed": true}, {"check": "blank", "passed": true}, {"check": "first_order", "passed": true}, {"check": "input_immutable", "passed": true}]

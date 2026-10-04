@@ -1,0 +1,41 @@
+{
+  "schema_version": "agent_loop_poc.v2",
+  "task_id": "conflict",
+  "status": "blocked",
+  "current_stage": "tasker",
+  "next_stage": null,
+  "last_completed_stage": "tasker",
+  "return_target": null,
+  "needs_user_input": false,
+  "reason": "Stage reports a blocker; no automatic retry is authorized.",
+  "reason_code": "stage_blocked",
+  "blocker": null,
+  "invalidated_artifacts": [],
+  "artifacts": {
+    "tasker_input": true,
+    "researcher_task": true,
+    "planner_plan": false,
+    "implementer_impl": false,
+    "reviewer_result": false,
+    "reviewer_review": false
+  },
+  "history": [
+    {
+      "at": "2026-10-04T07:23:12+00:00",
+      "event": "sync",
+      "status": "initialized",
+      "current_stage": null,
+      "next_stage": "tasker",
+      "reason_code": "stage_ready"
+    },
+    {
+      "at": "2026-10-04T07:25:21+00:00",
+      "event": "sync",
+      "status": "blocked",
+      "current_stage": "tasker",
+      "next_stage": null,
+      "reason_code": "stage_blocked"
+    }
+  ],
+  "updated_at": "2026-10-04T07:25:21+00:00"
+}

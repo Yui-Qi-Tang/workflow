@@ -1,0 +1,9 @@
+{
+  "kind": "invocation_refusal",
+  "stage": "researcher",
+  "artifact_produced": false,
+  "reason": "Stage refused to execute, citing opposition-only instructions; no artifact was produced. User exception was explicit inside prompt.txt but not repeated in the outer spawn message. No retry or parent artifact substitution.",
+  "classification": "authorization_delivery_or_instruction_resolution",
+  "model_capability_conclusion": "not_assessed",
+  "causality": "Authorization delivery or instruction-resolution problem is plausible, not isolated by a controlled follow-up. Full tool trace is unavailable, so whether prompt.txt was read is not verified."
+}

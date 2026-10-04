@@ -1,0 +1,49 @@
+{
+  "schema_version": "agent_loop_poc.v2",
+  "task_id": "tickets",
+  "status": "ready",
+  "current_stage": "tasker",
+  "next_stage": "researcher",
+  "last_completed_stage": "tasker",
+  "return_target": null,
+  "needs_user_input": false,
+  "reason": "Run researcher with the current required inputs.",
+  "reason_code": "stage_ready",
+  "blocker": null,
+  "invalidated_artifacts": [],
+  "artifacts": {
+    "tasker_input": true,
+    "researcher_task": true,
+    "planner_plan": false,
+    "implementer_impl": false,
+    "reviewer_result": false,
+    "reviewer_review": false
+  },
+  "history": [
+    {
+      "at": "2026-10-04T07:25:22+00:00",
+      "event": "sync",
+      "status": "initialized",
+      "current_stage": null,
+      "next_stage": "tasker",
+      "reason_code": "stage_ready"
+    },
+    {
+      "at": "2026-10-04T07:26:46+00:00",
+      "event": "sync",
+      "status": "ready",
+      "current_stage": "tasker",
+      "next_stage": "researcher",
+      "reason_code": "stage_ready"
+    },
+    {
+      "at": "2026-10-04T07:27:11+00:00",
+      "event": "sync",
+      "status": "ready",
+      "current_stage": "tasker",
+      "next_stage": "researcher",
+      "reason_code": "stage_ready"
+    }
+  ],
+  "updated_at": "2026-10-04T07:27:11+00:00"
+}

@@ -1,0 +1,7 @@
+{
+  "command": "python3 -B smoke.py",
+  "origin": "independent main-agent rerun after cell terminated; not original model execution trace",
+  "exit_code": 0,
+  "stdout": "public_smoke: 2 assertions passed\n",
+  "stderr": ""
+}
