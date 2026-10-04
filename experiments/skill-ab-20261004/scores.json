@@ -1,0 +1,640 @@
+{
+  "frozen_manifest_ok": true,
+  "denominator": 6,
+  "scores": [
+    {
+      "case": "fresh",
+      "arm": "off",
+      "observed_case_success": true,
+      "qualified_success": true,
+      "semantic_result_ok": true,
+      "terminal_ok": true,
+      "terminal_state": {
+        "schema_version": "agent_loop_poc.v2",
+        "task_id": "case",
+        "status": "completed",
+        "current_stage": "reviewer",
+        "next_stage": null,
+        "last_completed_stage": "reviewer",
+        "return_target": null,
+        "needs_user_input": false,
+        "reason": "Current artifact chain passed structural and declared-result checks.",
+        "reason_code": "review_success",
+        "blocker": null,
+        "invalidated_artifacts": [],
+        "artifacts": {
+          "tasker_input": true,
+          "researcher_task": true,
+          "planner_plan": true,
+          "implementer_impl": true,
+          "reviewer_result": true,
+          "reviewer_review": true
+        },
+        "history": [],
+        "updated_at": "2026-10-04T15:15:18+00:00"
+      },
+      "saved_handoff_ok": true,
+      "selected_receipts": {
+        "tasker": {
+          "kind": "saved_file_validate",
+          "time_ns": 1791126080820166000,
+          "sha256": "67c928fd887904362f1cf9f5bd7ff6da7dc12e842c00b4572ae6b500b62c367f"
+        },
+        "researcher": {
+          "kind": "saved_file_validate",
+          "time_ns": 1791126137433295000,
+          "sha256": "13725a1f11a04c6544b05e8ba45755d2e97e04395a9d41679b204a408e997d92"
+        },
+        "planner": {
+          "kind": "saved_file_validate",
+          "time_ns": 1791126198612287000,
+          "sha256": "04e5b3dfc995dac1a3813fd8e8ba68c71a5331af15ddd068646d5e1ad51558c8"
+        },
+        "implementer": {
+          "kind": "saved_file_validate",
+          "time_ns": 1791126282160627000,
+          "sha256": "6b729dce7728d61a32569c28fed72dc921596446c1773d086a33418844231f86"
+        },
+        "reviewer": {
+          "kind": "saved_file_validate",
+          "time_ns": 1791126359809802000,
+          "sha256": "9767ce38fe946aaaa89c126ebb9d1ac7785fa48c4cffab5ac77e63ca39d11811"
+        }
+      },
+      "artifact_errors": {
+        "tasker": [],
+        "researcher": [],
+        "planner": [],
+        "implementer": [],
+        "reviewer": []
+      },
+      "protected_files_intact": true,
+      "changed_protected_files": [],
+      "unexpected_files": [],
+      "report": {
+        "total": 18,
+        "ids": [
+          "a",
+          "c",
+          "d",
+          "f"
+        ]
+      },
+      "all_seed_revisions_replaced": null,
+      "validation_attempts": [
+        {
+          "stage": "tasker",
+          "exit_code": 0
+        },
+        {
+          "stage": "researcher",
+          "exit_code": 0
+        },
+        {
+          "stage": "planner",
+          "exit_code": 0
+        },
+        {
+          "stage": "implementer",
+          "exit_code": 0
+        },
+        {
+          "stage": "reviewer",
+          "exit_code": 0
+        }
+      ],
+      "validation_failures": 0,
+      "cli_calls": 18,
+      "skill_delivery_receipt_ok": true,
+      "scope_and_exposure_audit": {
+        "status": "confirmed",
+        "reason": "Main agent manually read every visible tool-call body. All calls use local exec_command with assigned workdir; reads/writes stay in authorized root, controller operations use recorder, no audit/tooling edits or peer/network/memory/skill-body bypasses. On loaded body before workflow; off did not load body.",
+        "audited_tool_calls": 22,
+        "tool_trace_sha256": "2ec94a5a9d0f641841353f1082ca20d1d35f2b11d74c27344c19d2270d083a76",
+        "evidence": [
+          "transcripts/fresh/off/tool-and-public-messages.jsonl",
+          "transcripts/fresh/off/metadata.json",
+          "runs/fresh/off/audit/"
+        ],
+        "limits": "Confirmed against available complete visible tool trace and supplied prompt, not OS-level confinement or proof of unobservable internal use. Ambient catalog awareness is shared; encrypted NEW_TASK wrapper is represented by frozen parent dispatch prompt."
+      }
+    },
+    {
+      "case": "fresh",
+      "arm": "on",
+      "observed_case_success": true,
+      "qualified_success": true,
+      "semantic_result_ok": true,
+      "terminal_ok": true,
+      "terminal_state": {
+        "schema_version": "agent_loop_poc.v2",
+        "task_id": "case",
+        "status": "completed",
+        "current_stage": "reviewer",
+        "next_stage": null,
+        "last_completed_stage": "reviewer",
+        "return_target": null,
+        "needs_user_input": false,
+        "reason": "Current artifact chain passed structural and declared-result checks.",
+        "reason_code": "review_success",
+        "blocker": null,
+        "invalidated_artifacts": [],
+        "artifacts": {
+          "tasker_input": true,
+          "researcher_task": true,
+          "planner_plan": true,
+          "implementer_impl": true,
+          "reviewer_result": true,
+          "reviewer_review": true
+        },
+        "history": [],
+        "updated_at": "2026-10-04T15:15:18+00:00"
+      },
+      "saved_handoff_ok": true,
+      "selected_receipts": {
+        "tasker": {
+          "kind": "saved_file_validate",
+          "time_ns": 1791126088476558000,
+          "sha256": "949064042bb7cf858769dbb6930d54d054478d22f4426cff7dace20e1ec0298a"
+        },
+        "researcher": {
+          "kind": "saved_file_validate",
+          "time_ns": 1791126135470780000,
+          "sha256": "ac718c66a211088dd6835253483535ce908f8e4847289f61de78a1b30d00757d"
+        },
+        "planner": {
+          "kind": "saved_file_validate",
+          "time_ns": 1791126186854721000,
+          "sha256": "ed7f0afec078ed5b7707e935d91006a18470a1c56e9a3ef3ecd69c2a4e44b315"
+        },
+        "implementer": {
+          "kind": "saved_file_validate",
+          "time_ns": 1791126255991600000,
+          "sha256": "6c3e979913d73f8817f88caa688853a281541c453379231773376edabc1d7406"
+        },
+        "reviewer": {
+          "kind": "saved_file_validate",
+          "time_ns": 1791126329478914000,
+          "sha256": "0462dbe23c3c7240fe89c5cd44a2a81edff532942c3f29b0d777bc80956ccf79"
+        }
+      },
+      "artifact_errors": {
+        "tasker": [],
+        "researcher": [],
+        "planner": [],
+        "implementer": [],
+        "reviewer": []
+      },
+      "protected_files_intact": true,
+      "changed_protected_files": [],
+      "unexpected_files": [],
+      "report": {
+        "total": 18,
+        "ids": [
+          "a",
+          "c",
+          "d",
+          "f"
+        ]
+      },
+      "all_seed_revisions_replaced": null,
+      "validation_attempts": [
+        {
+          "stage": "tasker",
+          "exit_code": 0
+        },
+        {
+          "stage": "researcher",
+          "exit_code": 0
+        },
+        {
+          "stage": "planner",
+          "exit_code": 0
+        },
+        {
+          "stage": "implementer",
+          "exit_code": 0
+        },
+        {
+          "stage": "tasker",
+          "exit_code": 0
+        },
+        {
+          "stage": "researcher",
+          "exit_code": 0
+        },
+        {
+          "stage": "planner",
+          "exit_code": 0
+        },
+        {
+          "stage": "implementer",
+          "exit_code": 0
+        },
+        {
+          "stage": "reviewer",
+          "exit_code": 0
+        }
+      ],
+      "validation_failures": 0,
+      "cli_calls": 21,
+      "skill_delivery_receipt_ok": true,
+      "scope_and_exposure_audit": {
+        "status": "confirmed",
+        "reason": "Main agent manually read every visible tool-call body. All calls use local exec_command with assigned workdir; reads/writes stay in authorized root, controller operations use recorder, no audit/tooling edits or peer/network/memory/skill-body bypasses. On loaded body before workflow; off did not load body.",
+        "audited_tool_calls": 15,
+        "tool_trace_sha256": "1d9306fee250e95ee1b1cedc37945047f306e6d57fc987040d83cab1eb4f7258",
+        "evidence": [
+          "transcripts/fresh/on/tool-and-public-messages.jsonl",
+          "transcripts/fresh/on/metadata.json",
+          "runs/fresh/on/audit/"
+        ],
+        "limits": "Confirmed against available complete visible tool trace and supplied prompt, not OS-level confinement or proof of unobservable internal use. Ambient catalog awareness is shared; encrypted NEW_TASK wrapper is represented by frozen parent dispatch prompt."
+      }
+    },
+    {
+      "case": "stale",
+      "arm": "on",
+      "observed_case_success": true,
+      "qualified_success": true,
+      "semantic_result_ok": true,
+      "terminal_ok": true,
+      "terminal_state": {
+        "schema_version": "agent_loop_poc.v2",
+        "task_id": "case",
+        "status": "completed",
+        "current_stage": "reviewer",
+        "next_stage": null,
+        "last_completed_stage": "reviewer",
+        "return_target": null,
+        "needs_user_input": false,
+        "reason": "Current artifact chain passed structural and declared-result checks.",
+        "reason_code": "review_success",
+        "blocker": null,
+        "invalidated_artifacts": [],
+        "artifacts": {
+          "tasker_input": true,
+          "researcher_task": true,
+          "planner_plan": true,
+          "implementer_impl": true,
+          "reviewer_result": true,
+          "reviewer_review": true
+        },
+        "history": [],
+        "updated_at": "2026-10-04T15:15:18+00:00"
+      },
+      "saved_handoff_ok": true,
+      "selected_receipts": {
+        "tasker": {
+          "kind": "saved_file_validate",
+          "time_ns": 1791126489582629000,
+          "sha256": "c3718f6962d0f74a5039c3f668462dd732790fa94d0a31cf41e6fed17f0fe883"
+        },
+        "researcher": {
+          "kind": "saved_file_validate",
+          "time_ns": 1791126541556223000,
+          "sha256": "8715693b3f7be88d54df68559a9e8ff8e603b7b3a7201a7bc5c754896a33afde"
+        },
+        "planner": {
+          "kind": "saved_file_validate",
+          "time_ns": 1791126586137175000,
+          "sha256": "36bf22f1476ee95edfa7a2b24041ace99d67d9c6f166556f354dbc643778a99f"
+        },
+        "implementer": {
+          "kind": "saved_file_validate",
+          "time_ns": 1791126635646354000,
+          "sha256": "eba17d5ad582fe38284673075cd3b494cc552702634a9aa685d8e456a3ceca78"
+        },
+        "reviewer": {
+          "kind": "saved_file_validate",
+          "time_ns": 1791126703970926000,
+          "sha256": "f0cd75f26429e4403a39ebcf3ca8d0e29c58a7eb8e49fac33edc619caa235a6b"
+        }
+      },
+      "artifact_errors": {
+        "tasker": [],
+        "researcher": [],
+        "planner": [],
+        "implementer": [],
+        "reviewer": []
+      },
+      "protected_files_intact": true,
+      "changed_protected_files": [],
+      "unexpected_files": [],
+      "report": {
+        "total": 18,
+        "ids": [
+          "a",
+          "c",
+          "d",
+          "f"
+        ]
+      },
+      "all_seed_revisions_replaced": true,
+      "validation_attempts": [
+        {
+          "stage": "tasker",
+          "exit_code": 0
+        },
+        {
+          "stage": "researcher",
+          "exit_code": 0
+        },
+        {
+          "stage": "planner",
+          "exit_code": 0
+        },
+        {
+          "stage": "implementer",
+          "exit_code": 0
+        },
+        {
+          "stage": "reviewer",
+          "exit_code": 0
+        }
+      ],
+      "validation_failures": 0,
+      "cli_calls": 17,
+      "skill_delivery_receipt_ok": true,
+      "scope_and_exposure_audit": {
+        "status": "confirmed",
+        "reason": "Main agent manually read all visible tool-call bodies. Each shell command used assigned root; file operations were confined to permitted reads and generated outputs. Controller operations used recorder; no outside-root, peer, network, memory, audit edits or core bypass found. On loaded frozen body before workflow operations; off did not read skill body.",
+        "audited_tool_calls": 11,
+        "tool_trace_sha256": "eca479e18788ebebc148e358ec5e809fe9b9945f623399ccdbbc8712e43c3a83",
+        "evidence": [
+          "transcripts/stale/on/tool-and-public-messages.jsonl",
+          "transcripts/stale/on/metadata.json",
+          "runs/stale/on/audit/"
+        ],
+        "limits": "Visible-tool-trace qualification, not OS confinement or proof of private model cognition. Ambient catalog awareness shared; recorded NEW_TASK message is encrypted and the submitted plaintext prompt is retained separately."
+      }
+    },
+    {
+      "case": "stale",
+      "arm": "off",
+      "observed_case_success": true,
+      "qualified_success": true,
+      "semantic_result_ok": true,
+      "terminal_ok": true,
+      "terminal_state": {
+        "schema_version": "agent_loop_poc.v2",
+        "task_id": "case",
+        "status": "completed",
+        "current_stage": "reviewer",
+        "next_stage": null,
+        "last_completed_stage": "reviewer",
+        "return_target": null,
+        "needs_user_input": false,
+        "reason": "Current artifact chain passed structural and declared-result checks.",
+        "reason_code": "review_success",
+        "blocker": null,
+        "invalidated_artifacts": [],
+        "artifacts": {
+          "tasker_input": true,
+          "researcher_task": true,
+          "planner_plan": true,
+          "implementer_impl": true,
+          "reviewer_result": true,
+          "reviewer_review": true
+        },
+        "history": [],
+        "updated_at": "2026-10-04T15:15:18+00:00"
+      },
+      "saved_handoff_ok": true,
+      "selected_receipts": {
+        "tasker": {
+          "kind": "saved_file_validate",
+          "time_ns": 1791126511749426000,
+          "sha256": "cd52ae7a3ef3b358515681dae670affa0a949edf478911de7cc1c045f435cbd0"
+        },
+        "researcher": {
+          "kind": "saved_file_validate",
+          "time_ns": 1791126558307938000,
+          "sha256": "2b8fc148b4b5f693892e2511e1032e38175c74b592f8aaa9f06820f6d2233ccb"
+        },
+        "planner": {
+          "kind": "saved_file_validate",
+          "time_ns": 1791126607767070000,
+          "sha256": "c2c9df99cd43507b0adc62c619df253c7be8f306830931b0609caaaf1255c445"
+        },
+        "implementer": {
+          "kind": "saved_file_validate",
+          "time_ns": 1791126671669106000,
+          "sha256": "ab2c5391333a62f695707b025e42f7dad2b915007e741aa5d5f7cb3642374be5"
+        },
+        "reviewer": {
+          "kind": "saved_file_validate",
+          "time_ns": 1791126731073521000,
+          "sha256": "8bbc3e0b3ec07075fee690a011eea6bd3020354c1b4c4f26bac0d69bf7809e61"
+        }
+      },
+      "artifact_errors": {
+        "tasker": [],
+        "researcher": [],
+        "planner": [],
+        "implementer": [],
+        "reviewer": []
+      },
+      "protected_files_intact": true,
+      "changed_protected_files": [],
+      "unexpected_files": [],
+      "report": {
+        "total": 18,
+        "ids": [
+          "a",
+          "c",
+          "d",
+          "f"
+        ]
+      },
+      "all_seed_revisions_replaced": true,
+      "validation_attempts": [
+        {
+          "stage": "tasker",
+          "exit_code": 0
+        },
+        {
+          "stage": "researcher",
+          "exit_code": 0
+        },
+        {
+          "stage": "planner",
+          "exit_code": 0
+        },
+        {
+          "stage": "implementer",
+          "exit_code": 0
+        },
+        {
+          "stage": "reviewer",
+          "exit_code": 0
+        }
+      ],
+      "validation_failures": 0,
+      "cli_calls": 18,
+      "skill_delivery_receipt_ok": true,
+      "scope_and_exposure_audit": {
+        "status": "confirmed",
+        "reason": "Main agent manually read all visible tool-call bodies. Each shell command used assigned root; file operations were confined to permitted reads and generated outputs. Controller operations used recorder; no outside-root, peer, network, memory, audit edits or core bypass found. On loaded frozen body before workflow operations; off did not read skill body.",
+        "audited_tool_calls": 19,
+        "tool_trace_sha256": "1801c86d4d54da5af71ab1a080cea62663a2e52337ffc14abf68b1afa2cd0a7a",
+        "evidence": [
+          "transcripts/stale/off/tool-and-public-messages.jsonl",
+          "transcripts/stale/off/metadata.json",
+          "runs/stale/off/audit/"
+        ],
+        "limits": "Visible-tool-trace qualification, not OS confinement or proof of private model cognition. Ambient catalog awareness shared; recorded NEW_TASK message is encrypted and the submitted plaintext prompt is retained separately."
+      }
+    },
+    {
+      "case": "blocked",
+      "arm": "off",
+      "observed_case_success": true,
+      "qualified_success": true,
+      "semantic_result_ok": true,
+      "terminal_ok": true,
+      "terminal_state": {
+        "schema_version": "agent_loop_poc.v2",
+        "task_id": "case",
+        "status": "waiting_user",
+        "current_stage": "tasker",
+        "next_stage": null,
+        "last_completed_stage": "tasker",
+        "return_target": null,
+        "needs_user_input": true,
+        "reason": "Resolve the structured blocking question, approval or proposed task update.",
+        "reason_code": "user_decision",
+        "blocker": null,
+        "invalidated_artifacts": [],
+        "artifacts": {
+          "tasker_input": true,
+          "researcher_task": true,
+          "planner_plan": false,
+          "implementer_impl": false,
+          "reviewer_result": false,
+          "reviewer_review": false
+        },
+        "history": [],
+        "updated_at": "2026-10-04T15:15:18+00:00"
+      },
+      "saved_handoff_ok": true,
+      "selected_receipts": {
+        "tasker": {
+          "kind": "unchanged_blocked_prefix_inspection",
+          "time_ns": 1791126812883826000
+        }
+      },
+      "artifact_errors": {
+        "tasker": []
+      },
+      "protected_files_intact": true,
+      "changed_protected_files": [],
+      "unexpected_files": [],
+      "report": null,
+      "all_seed_revisions_replaced": null,
+      "validation_attempts": [
+        {
+          "stage": "tasker",
+          "exit_code": 0
+        }
+      ],
+      "validation_failures": 0,
+      "cli_calls": 4,
+      "skill_delivery_receipt_ok": true,
+      "scope_and_exposure_audit": {
+        "status": "confirmed",
+        "reason": "Main agent manually read all six visible tool-call bodies. All commands and file operations stay within trial root and allowed paths; only observation evidence and automatic receipts generated. Existing blocked seed preserved. On loaded frozen skill before workflow; off did not read any body; no disallowed tools, scope escape, audit edits or controller bypass observed.",
+        "audited_tool_calls": 6,
+        "tool_trace_sha256": "043837ab5644830d495f1de835b18f7aba50f6de4237b19d797e69a706692383",
+        "evidence": [
+          "transcripts/blocked/off/tool-and-public-messages.jsonl",
+          "transcripts/blocked/off/metadata.json",
+          "runs/blocked/off/audit/"
+        ],
+        "limits": "Visible-tool-trace qualification, not OS confinement or proof of private model cognition. Ambient catalog awareness shared; submitted prompt is retained separately from encrypted runtime NEW_TASK wrapper."
+      }
+    },
+    {
+      "case": "blocked",
+      "arm": "on",
+      "observed_case_success": true,
+      "qualified_success": true,
+      "semantic_result_ok": true,
+      "terminal_ok": true,
+      "terminal_state": {
+        "schema_version": "agent_loop_poc.v2",
+        "task_id": "case",
+        "status": "waiting_user",
+        "current_stage": "tasker",
+        "next_stage": null,
+        "last_completed_stage": "tasker",
+        "return_target": null,
+        "needs_user_input": true,
+        "reason": "Resolve the structured blocking question, approval or proposed task update.",
+        "reason_code": "user_decision",
+        "blocker": null,
+        "invalidated_artifacts": [],
+        "artifacts": {
+          "tasker_input": true,
+          "researcher_task": true,
+          "planner_plan": false,
+          "implementer_impl": false,
+          "reviewer_result": false,
+          "reviewer_review": false
+        },
+        "history": [],
+        "updated_at": "2026-10-04T15:15:18+00:00"
+      },
+      "saved_handoff_ok": true,
+      "selected_receipts": {
+        "tasker": {
+          "kind": "unchanged_blocked_prefix_inspection",
+          "time_ns": 1791126846138477000
+        }
+      },
+      "artifact_errors": {
+        "tasker": []
+      },
+      "protected_files_intact": true,
+      "changed_protected_files": [],
+      "unexpected_files": [],
+      "report": null,
+      "all_seed_revisions_replaced": null,
+      "validation_attempts": [
+        {
+          "stage": "tasker",
+          "exit_code": 0
+        }
+      ],
+      "validation_failures": 0,
+      "cli_calls": 4,
+      "skill_delivery_receipt_ok": true,
+      "scope_and_exposure_audit": {
+        "status": "confirmed",
+        "reason": "Main agent manually read all six visible tool-call bodies. All commands and file operations stay within trial root and allowed paths; only observation evidence and automatic receipts generated. Existing blocked seed preserved. On loaded frozen skill before workflow; off did not read any body; no disallowed tools, scope escape, audit edits or controller bypass observed.",
+        "audited_tool_calls": 6,
+        "tool_trace_sha256": "455d5e589276070b45d3b8e4307e4dd7b9e273555b96d269affd01b46cc30a26",
+        "evidence": [
+          "transcripts/blocked/on/tool-and-public-messages.jsonl",
+          "transcripts/blocked/on/metadata.json",
+          "runs/blocked/on/audit/"
+        ],
+        "limits": "Visible-tool-trace qualification, not OS confinement or proof of private model cognition. Ambient catalog awareness shared; submitted prompt is retained separately from encrypted runtime NEW_TASK wrapper."
+      }
+    }
+  ],
+  "summary": {
+    "off": {
+      "observed_pass": 3,
+      "qualified_pass": 3,
+      "qualification_unknown": 0,
+      "total": 3
+    },
+    "on": {
+      "observed_pass": 3,
+      "qualified_pass": 3,
+      "qualification_unknown": 0,
+      "total": 3
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "task_name": "/root/skill_ab_stale_off",
+  "thread_id": "01a10774-c46b-7582-986c-daf49a0b24eb",
+  "finished": {
+    "timestamp": "2026-10-04T15:12:31.268Z",
+    "type": "task_complete"
+  },
+  "elapsed_seconds": 295.765,
+  "final_report": "transcripts/stale/off/final.md",
+  "timeout": false
+}

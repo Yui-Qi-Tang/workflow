@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "deleted_task_absent": {
+      "status": "passed",
+      "evidence": "Nine verified regular untracked files deleted; both exact target paths absent. See evidence/deletion.json."
+    },
+    "unrelated_files_preserved": {
+      "status": "passed",
+      "evidence": "407 tracked files retain baseline SHA-256 values; index diff unchanged. No product or historical experiment file changed."
+    },
+    "assessment_grounded": {
+      "status": "passed",
+      "evidence": "Six operative role docs, exact controller type definitions and operating README checked. Source lines and accepted opposition corrections in evidence/assessment.json; skill efficacy explicitly untested."
+    }
+  },
+  "tracked_files_checked": 407,
+  "changed_tracked_files": [],
+  "index_unchanged": true
+}

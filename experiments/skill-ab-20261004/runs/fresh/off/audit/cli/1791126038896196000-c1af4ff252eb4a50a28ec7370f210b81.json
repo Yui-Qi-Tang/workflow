@@ -1,0 +1,14 @@
+{
+  "start_ns": 1791126038896196000,
+  "end_ns": 1791126038900460000,
+  "argv": [
+    "inputs",
+    "case",
+    "tasker"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"revision\": \"023534d2-44da-4fe3-af6f-b7d9ca1ae68f\",\n  \"input_fingerprints\": {\n    \"tasker/case.md\": \"b9427aeb10681ee8fe8968b5a47d8671aecf2dcbec47891c2d817353b07f7b04\"\n  }\n}\n",
+  "stderr": "",
+  "artifacts_before": {},
+  "artifacts_after": {}
+}

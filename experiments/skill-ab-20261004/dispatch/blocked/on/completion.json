@@ -1,0 +1,11 @@
+{
+  "task_name": "/root/skill_ab_blocked_on",
+  "thread_id": "01a1077a-5986-7500-b164-30f2f2979dc4",
+  "finished": {
+    "timestamp": "2026-10-04T15:14:55.865Z",
+    "type": "task_complete"
+  },
+  "elapsed_seconds": 74.52,
+  "final_report": "transcripts/blocked/on/final.md",
+  "timeout": false
+}

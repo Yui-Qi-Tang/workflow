@@ -1,0 +1,145 @@
+{
+  "definition": "Elapsed: runtime task_started to task_complete, includes reasoning, tool and scheduling time. Token usage is logged cumulative API accounting with repeated/cached input; not unique prompt length or a dollar-cost estimate. Descriptive only.",
+  "rows": [
+    {
+      "case": "fresh",
+      "arm": "off",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "elapsed_seconds": 379.533,
+      "within_600_seconds": true,
+      "tool_envelope_calls": 22,
+      "shell_exec_command_invocations": 22,
+      "controller_cli_calls": 18,
+      "validation_attempts": 5,
+      "validation_failures": 0,
+      "logged_cumulative_tokens": {
+        "input_tokens": 1463991,
+        "cached_input_tokens": 1400448,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9600,
+        "reasoning_output_tokens": 949,
+        "total_tokens": 1473591
+      }
+    },
+    {
+      "case": "fresh",
+      "arm": "on",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "elapsed_seconds": 319.439,
+      "within_600_seconds": true,
+      "tool_envelope_calls": 15,
+      "shell_exec_command_invocations": 15,
+      "controller_cli_calls": 21,
+      "validation_attempts": 9,
+      "validation_failures": 0,
+      "logged_cumulative_tokens": {
+        "input_tokens": 1000366,
+        "cached_input_tokens": 956160,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8660,
+        "reasoning_output_tokens": 639,
+        "total_tokens": 1009026
+      }
+    },
+    {
+      "case": "stale",
+      "arm": "on",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "elapsed_seconds": 310.361,
+      "within_600_seconds": true,
+      "tool_envelope_calls": 11,
+      "shell_exec_command_invocations": 32,
+      "controller_cli_calls": 17,
+      "validation_attempts": 5,
+      "validation_failures": 0,
+      "logged_cumulative_tokens": {
+        "input_tokens": 737382,
+        "cached_input_tokens": 694528,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8673,
+        "reasoning_output_tokens": 403,
+        "total_tokens": 746055
+      }
+    },
+    {
+      "case": "stale",
+      "arm": "off",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "elapsed_seconds": 295.765,
+      "within_600_seconds": true,
+      "tool_envelope_calls": 19,
+      "shell_exec_command_invocations": 23,
+      "controller_cli_calls": 18,
+      "validation_attempts": 5,
+      "validation_failures": 0,
+      "logged_cumulative_tokens": {
+        "input_tokens": 1238724,
+        "cached_input_tokens": 1196032,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7770,
+        "reasoning_output_tokens": 159,
+        "total_tokens": 1246494
+      }
+    },
+    {
+      "case": "blocked",
+      "arm": "off",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "elapsed_seconds": 88.323,
+      "within_600_seconds": true,
+      "tool_envelope_calls": 6,
+      "shell_exec_command_invocations": 9,
+      "controller_cli_calls": 4,
+      "validation_attempts": 1,
+      "validation_failures": 0,
+      "logged_cumulative_tokens": {
+        "input_tokens": 349424,
+        "cached_input_tokens": 333952,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2169,
+        "reasoning_output_tokens": 505,
+        "total_tokens": 351593
+      }
+    },
+    {
+      "case": "blocked",
+      "arm": "on",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "elapsed_seconds": 74.52,
+      "within_600_seconds": true,
+      "tool_envelope_calls": 6,
+      "shell_exec_command_invocations": 9,
+      "controller_cli_calls": 4,
+      "validation_attempts": 1,
+      "validation_failures": 0,
+      "logged_cumulative_tokens": {
+        "input_tokens": 348133,
+        "cached_input_tokens": 333568,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1748,
+        "reasoning_output_tokens": 269,
+        "total_tokens": 349881
+      }
+    }
+  ],
+  "summary": {
+    "off": {
+      "total_elapsed_seconds": 763.621,
+      "shell_exec_command_invocations": 54,
+      "controller_cli_calls": 40,
+      "validation_failures": 0
+    },
+    "on": {
+      "total_elapsed_seconds": 704.32,
+      "shell_exec_command_invocations": 56,
+      "controller_cli_calls": 42,
+      "validation_failures": 0
+    }
+  }
+}

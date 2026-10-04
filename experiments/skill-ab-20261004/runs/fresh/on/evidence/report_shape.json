@@ -1,0 +1,15 @@
+{
+  "check": "report_shape",
+  "status": "passed",
+  "method": "JSON parse; exact keys; type(total) is int; ids list of strings lexicographically sorted.",
+  "report_sha256": "a03d9134a1d62fcfa49bc7a8e7469f35837cf73e1facebaf96ac41d1e64989fe",
+  "actual": {
+    "total": 18,
+    "ids": [
+      "a",
+      "c",
+      "d",
+      "f"
+    ]
+  }
+}

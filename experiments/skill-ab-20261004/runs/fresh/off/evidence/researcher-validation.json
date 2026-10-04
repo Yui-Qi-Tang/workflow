@@ -1,0 +1,28 @@
+{
+  "schema_version": "agent_loop_poc.v2",
+  "task_id": "case",
+  "status": "validated",
+  "current_stage": "researcher",
+  "next_stage": null,
+  "last_completed_stage": "researcher",
+  "return_target": null,
+  "needs_user_input": false,
+  "reason": "Current prefix and saved artifact passed validation; this does not authorize routing.",
+  "reason_code": "artifact_valid",
+  "blocker": null,
+  "invalidated_artifacts": [],
+  "artifacts": {
+    "tasker_input": true,
+    "researcher_task": true,
+    "planner_plan": true,
+    "implementer_impl": false,
+    "reviewer_result": false,
+    "reviewer_review": false
+  },
+  "history": [],
+  "updated_at": "2026-10-04T15:02:17+00:00",
+  "validated_artifact": {
+    "path": "share/case/planner/plan.md",
+    "sha256": "13725a1f11a04c6544b05e8ba45755d2e97e04395a9d41679b204a408e997d92"
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "a",
+    "revision": 1,
+    "amount": 10,
+    "state": "active"
+  },
+  {
+    "id": "a",
+    "revision": 2,
+    "amount": 12,
+    "state": "active"
+  },
+  {
+    "id": "b",
+    "revision": 1,
+    "amount": 8,
+    "state": "active"
+  },
+  {
+    "id": "b",
+    "revision": 2,
+    "amount": 8,
+    "state": "canceled"
+  },
+  {
+    "id": "c",
+    "revision": 1,
+    "amount": 5,
+    "state": "active"
+  },
+  {
+    "id": "d",
+    "revision": 1,
+    "amount": -3,
+    "state": "active"
+  },
+  {
+    "id": "e",
+    "revision": 1,
+    "amount": 7,
+    "state": "pending"
+  },
+  {
+    "id": "f",
+    "revision": 1,
+    "amount": 4,
+    "state": "active"
+  }
+]

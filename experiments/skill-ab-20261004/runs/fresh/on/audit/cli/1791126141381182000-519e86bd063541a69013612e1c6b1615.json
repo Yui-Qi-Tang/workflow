@@ -1,0 +1,31 @@
+{
+  "start_ns": 1791126141381182000,
+  "end_ns": 1791126141385109000,
+  "argv": [
+    "next",
+    "case"
+  ],
+  "exit_code": 0,
+  "stdout": "planner\nstage_ready: Run planner with the current required inputs.\n",
+  "stderr": "",
+  "artifacts_before": {
+    "share/case/planner/plan.md": {
+      "sha256": "ac718c66a211088dd6835253483535ce908f8e4847289f61de78a1b30d00757d",
+      "mtime_ns": 1791126135411728617
+    },
+    "share/case/researcher/task.md": {
+      "sha256": "949064042bb7cf858769dbb6930d54d054478d22f4426cff7dace20e1ec0298a",
+      "mtime_ns": 1791126088437317174
+    }
+  },
+  "artifacts_after": {
+    "share/case/planner/plan.md": {
+      "sha256": "ac718c66a211088dd6835253483535ce908f8e4847289f61de78a1b30d00757d",
+      "mtime_ns": 1791126135411728617
+    },
+    "share/case/researcher/task.md": {
+      "sha256": "949064042bb7cf858769dbb6930d54d054478d22f4426cff7dace20e1ec0298a",
+      "mtime_ns": 1791126088437317174
+    }
+  }
+}

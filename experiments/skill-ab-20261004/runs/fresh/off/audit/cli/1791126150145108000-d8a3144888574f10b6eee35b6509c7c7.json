@@ -1,0 +1,32 @@
+{
+  "start_ns": 1791126150145108000,
+  "end_ns": 1791126150148849000,
+  "argv": [
+    "inputs",
+    "case",
+    "planner"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"revision\": \"a47e5958-3e6a-47cb-bea9-5b99955079e7\",\n  \"input_fingerprints\": {\n    \"share/case/planner/plan.md\": \"13725a1f11a04c6544b05e8ba45755d2e97e04395a9d41679b204a408e997d92\"\n  }\n}\n",
+  "stderr": "",
+  "artifacts_before": {
+    "share/case/planner/plan.md": {
+      "sha256": "13725a1f11a04c6544b05e8ba45755d2e97e04395a9d41679b204a408e997d92",
+      "mtime_ns": 1791126137386912562
+    },
+    "share/case/researcher/task.md": {
+      "sha256": "67c928fd887904362f1cf9f5bd7ff6da7dc12e842c00b4572ae6b500b62c367f",
+      "mtime_ns": 1791126080765610033
+    }
+  },
+  "artifacts_after": {
+    "share/case/planner/plan.md": {
+      "sha256": "13725a1f11a04c6544b05e8ba45755d2e97e04395a9d41679b204a408e997d92",
+      "mtime_ns": 1791126137386912562
+    },
+    "share/case/researcher/task.md": {
+      "sha256": "67c928fd887904362f1cf9f5bd7ff6da7dc12e842c00b4572ae6b500b62c367f",
+      "mtime_ns": 1791126080765610033
+    }
+  }
+}

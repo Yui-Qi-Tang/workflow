@@ -1,0 +1,357 @@
+{
+  "method": "Main-agent comparison of current role text against recursive controller specifications; inventory below is captured code evidence, not an automated natural-language equivalence proof.",
+  "result": "passed",
+  "documents": {
+    "tasker/AGENTS.md": {
+      "sha256": "9d06698a64d14906e7779116aa10223bda1562bc7e671afa93f6bc3265782d93",
+      "top_level_fields_present": true
+    },
+    "researcher/AGENTS.md": {
+      "sha256": "8d1c7ffac5ec488c4b2b134edeb88eb2f6a3f552cadec9663b137352524f8280",
+      "top_level_fields_present": true
+    },
+    "planner/AGENTS.md": {
+      "sha256": "c354c241562c9211b2f7a692623de01a1b7dcf21d5777839013e2c3bb2b668e6",
+      "top_level_fields_present": true
+    },
+    "implementer/AGENTS.md": {
+      "sha256": "57af0218933831d6ba83975ba31245474e8c6cc8800afc20a758a764081772eb",
+      "top_level_fields_present": true
+    },
+    "reviewer/AGENTS.md": {
+      "sha256": "abd0880f658f140fad2bcb64a6af8ba36b54654a461eb664e490d4461a9bf1cc",
+      "top_level_fields_present": true
+    },
+    "AGENTS.md": {
+      "sha256": "913a8138f9862057930e274fc6aadbac4328d318f19ff079bbdd97bdb65fe39c"
+    }
+  },
+  "common": {
+    "schema_version": [
+      "workflow_artifact.v1"
+    ],
+    "artifact_type": [
+      "normalized_task",
+      "research_plan",
+      "implementation_brief",
+      "implementation_result",
+      "workflow_review"
+    ],
+    "task_id": "str",
+    "produced_by": [
+      "tasker",
+      "researcher",
+      "planner",
+      "implementer",
+      "reviewer"
+    ],
+    "status": "str",
+    "input_artifacts": [
+      {
+        "path": "str",
+        "required": "bool",
+        "summary": "str"
+      }
+    ],
+    "trusted_sources": [
+      "dict"
+    ],
+    "untrusted_inputs_seen": [
+      "dict"
+    ],
+    "constraints": [
+      "str"
+    ],
+    "open_questions": [
+      {
+        "id": "str",
+        "question": "str",
+        "blocks_execution": "bool",
+        "reason": "str"
+      }
+    ],
+    "evidence": [
+      {
+        "kind": "str",
+        "source": "str",
+        "summary": "str"
+      }
+    ],
+    "handoff": {
+      "next_agent": "str",
+      "allowed_next_inputs": [
+        "str"
+      ],
+      "notes": "str"
+    }
+  },
+  "stages": {
+    "tasker": {
+      "goal": "str",
+      "scope": [
+        "str"
+      ],
+      "deliverables": [
+        "str"
+      ],
+      "acceptance_criteria": [
+        "str"
+      ],
+      "conflicts": [
+        {
+          "id": "str",
+          "description": "str",
+          "source_excerpt": "str",
+          "blocks_execution": "bool"
+        }
+      ],
+      "source_of_truth": [
+        "str"
+      ],
+      "validation": [
+        "str"
+      ],
+      "cleanup": [
+        "str"
+      ],
+      "rollback": [
+        "str"
+      ]
+    },
+    "researcher": {
+      "task_classification": "str",
+      "goal_restatement": "str",
+      "requested_change_summary": "str",
+      "expected_impact_areas": [
+        "str"
+      ],
+      "assumptions": [
+        {
+          "id": "str",
+          "statement": "str",
+          "source": "str",
+          "risk_if_wrong": "str"
+        }
+      ],
+      "risks": [
+        {
+          "id": "str",
+          "description": "str",
+          "impact": "str",
+          "mitigation": "str"
+        }
+      ],
+      "non_goals": [
+        "str"
+      ],
+      "high_level_strategy": [
+        "str"
+      ],
+      "required_checks": [
+        "str"
+      ],
+      "proposed_task_updates": [
+        {
+          "id": "str",
+          "description": "str",
+          "reason": "str",
+          "requires_user_approval": "bool"
+        }
+      ],
+      "failure_modes": [
+        {
+          "id": "str",
+          "trigger": "str",
+          "likely_stage": [
+            "tasker",
+            "researcher",
+            "planner",
+            "implementer",
+            "reviewer"
+          ],
+          "prevention": "str"
+        }
+      ]
+    },
+    "planner": {
+      "summary": "str",
+      "inputs_used": [
+        "str"
+      ],
+      "files_likely_to_change": [
+        "str"
+      ],
+      "ordered_steps": [
+        {
+          "step": "int",
+          "action": "str",
+          "rationale": "str",
+          "expected_evidence": "str"
+        }
+      ],
+      "invariants": [
+        "str"
+      ],
+      "validation_plan": [
+        {
+          "check": "str",
+          "command_or_method": "str",
+          "expected_result": "str",
+          "required": "bool"
+        }
+      ],
+      "cleanup_plan": [
+        "str"
+      ],
+      "escalation_conditions": [
+        {
+          "condition": "str",
+          "return_target": [
+            "tasker",
+            "researcher",
+            "planner",
+            "implementer",
+            "reviewer",
+            "NONE"
+          ],
+          "reason": "str"
+        }
+      ],
+      "rollback_hints": [
+        "str"
+      ],
+      "expected_output": {
+        "result_artifact_path": "str",
+        "implementation_summary_requirements": [
+          "str"
+        ]
+      }
+    },
+    "implementer": {
+      "implementation_summary": "str",
+      "changed_files": [
+        {
+          "path": "str",
+          "change_type": "str",
+          "summary": "str"
+        }
+      ],
+      "validation_results": [
+        {
+          "check": "str",
+          "status": [
+            "passed",
+            "failed",
+            "not_run",
+            "blocked"
+          ],
+          "evidence": "str",
+          "required": "bool"
+        }
+      ],
+      "cleanup_results": [
+        {
+          "item": "str",
+          "status": "str",
+          "evidence": "str"
+        }
+      ],
+      "failure_type": [
+        "none",
+        "implementation_error",
+        "plan_mismatch",
+        "task_conflict",
+        "validation_not_run",
+        "unknown"
+      ],
+      "failed_step": "str",
+      "failure_details": "str",
+      "suspected_cause": "str",
+      "suggested_return_target": [
+        "tasker",
+        "researcher",
+        "planner",
+        "implementer",
+        "reviewer",
+        "NONE"
+      ],
+      "notes": [
+        "str"
+      ]
+    },
+    "reviewer": {
+      "overall_judgment": [
+        "success",
+        "failed"
+      ],
+      "failure_source": [
+        "tasker",
+        "researcher",
+        "planner",
+        "implementer",
+        "NONE"
+      ],
+      "confidence": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "reason": "str",
+      "recommended_return_target": [
+        "tasker",
+        "researcher",
+        "planner",
+        "implementer",
+        "NONE"
+      ],
+      "recommended_next_action": "str",
+      "artifact_schema_checks": [
+        {
+          "artifact": "str",
+          "status": [
+            "passed",
+            "failed"
+          ],
+          "evidence": "str"
+        }
+      ],
+      "notes": [
+        "str"
+      ]
+    }
+  },
+  "blocker": {
+    "kind": [
+      "environment",
+      "requirement",
+      "approval",
+      "artifact",
+      "unknown"
+    ],
+    "reason": "str",
+    "stopped_stage": [
+      "tasker",
+      "researcher",
+      "planner",
+      "implementer",
+      "reviewer"
+    ]
+  },
+  "notes": [
+    "Boolean fields, arrays and nested strings explicitly documented.",
+    "Researcher likely_stage lists all five stages; planner return_target retains five stages plus NONE.",
+    "Validation result check/evidence nonempty, check unique and required boolean match controller.",
+    "Reviewer successful schema-check set matches four input kinds.",
+    "Root source entries document path/source/rule identity; cleanup status remains open string.",
+    "Existing controller and stage precedence remain unchanged.",
+    "Execution-mode observation is reported evidence, not a controller-enforced new field.",
+    "Textual opposition fixes adopted: hard isolation includes all applicable human/task requirements; orchestrator context not forwarded wholesale; producer retains output ownership."
+  ],
+  "graph": {
+    "project": "Users-yuki-workspace-workflow",
+    "tier": "verify_attempted",
+    "generation": "unavailable",
+    "status": "not_indexed",
+    "fallback": "Exact current role files and controller reads."
+  }
+}

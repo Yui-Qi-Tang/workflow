@@ -1,0 +1,59 @@
+{
+  "agent_path": "/root/skill_ab_stale_off",
+  "thread_id": "01a10774-c46b-7582-986c-daf49a0b24eb",
+  "source_rollout": "/Users/yuki/.codex/sessions/2026/10/04/rollout-2026-10-04T23-07-35-01a10774-c46b-7582-986c-daf49a0b24eb.jsonl",
+  "source_sha256": "a1aa4ccd7e2f2822b12ac20478c7d8b3b75473092ea0c90cf201c340c3497b0d",
+  "settings": [
+    {
+      "model": "gpt-6-astra",
+      "effort": "ultra",
+      "reasoning_effort": null
+    }
+  ],
+  "started": "2026-10-04T15:07:35.503Z",
+  "finished": {
+    "timestamp": "2026-10-04T15:12:31.268Z",
+    "type": "task_complete"
+  },
+  "calls": 19,
+  "outputs": 19,
+  "unmatched_call_ids": [],
+  "incomplete_jsonl_lines": 0,
+  "logged_cumulative_tokens": {
+    "input_tokens": 1238724,
+    "cached_input_tokens": 1196032,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 7770,
+    "reasoning_output_tokens": 159,
+    "total_tokens": 1246494
+  },
+  "inbound_context_body_checks": [
+    {
+      "role": "developer",
+      "sha256": "e28bf649244d4023ea395703368a3d904584b1d58679506af4ee96b40f4bb91a",
+      "full_skill_body_present": false,
+      "skill_sentinel_present": false
+    },
+    {
+      "role": "developer",
+      "sha256": "ed146aef547fe4dad4e977ee39f5ba39522c80a1689db8e99144573663ac9880",
+      "full_skill_body_present": false,
+      "skill_sentinel_present": false
+    },
+    {
+      "role": "developer",
+      "sha256": "f7e90c3b4fe2212b77dd031adb8240c7e932abed003173f1e458cd2f66c395d8",
+      "full_skill_body_present": false,
+      "skill_sentinel_present": false
+    },
+    {
+      "role": "user",
+      "sha256": "12b2ff4841d1932e30a91ebe0edc2639744f884aeaf46e5e7433c374e2891079",
+      "full_skill_body_present": false,
+      "skill_sentinel_present": false
+    }
+  ],
+  "encrypted_content_items_not_exported": 1,
+  "excluded": "Private reasoning, hidden system/developer bodies, account metadata and encrypted content are not exported.",
+  "scope_audit": "Pending parent manual examination; call completeness is not an OS sandbox guarantee."
+}

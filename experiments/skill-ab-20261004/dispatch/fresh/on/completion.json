@@ -1,0 +1,11 @@
+{
+  "task_name": "/root/skill_ab_fresh_on",
+  "thread_id": "01a1076e-4d87-73f3-8bcc-344c3069d89c",
+  "finished": {
+    "timestamp": "2026-10-04T15:05:51.282Z",
+    "type": "task_complete"
+  },
+  "elapsed_seconds": 319.439,
+  "final_report": "transcripts/fresh/on/final.md",
+  "timeout": false
+}

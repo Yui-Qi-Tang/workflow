@@ -1,0 +1,39 @@
+{
+  "staged_files": 569,
+  "allowlist_only": true,
+  "all_staged_blobs_match_working_files": true,
+  "cached_diff_exit_status": 2,
+  "whitespace_findings": [
+    {
+      "path": "experiments/skill-ab-20261004/transcripts/blocked/off/calls.txt",
+      "line": 26,
+      "issue": "new blank line at EOF."
+    },
+    {
+      "path": "experiments/skill-ab-20261004/transcripts/blocked/on/calls.txt",
+      "line": 26,
+      "issue": "new blank line at EOF."
+    },
+    {
+      "path": "experiments/skill-ab-20261004/transcripts/fresh/off/calls.txt",
+      "line": 87,
+      "issue": "new blank line at EOF."
+    },
+    {
+      "path": "experiments/skill-ab-20261004/transcripts/fresh/on/calls.txt",
+      "line": 59,
+      "issue": "new blank line at EOF."
+    },
+    {
+      "path": "experiments/skill-ab-20261004/transcripts/stale/off/calls.txt",
+      "line": 76,
+      "issue": "new blank line at EOF."
+    },
+    {
+      "path": "experiments/skill-ab-20261004/transcripts/stale/on/calls.txt",
+      "line": 64,
+      "issue": "new blank line at EOF."
+    }
+  ],
+  "final_recheck_required_after_review": true
+}

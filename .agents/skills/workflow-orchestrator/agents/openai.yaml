@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workflow Orchestrator"
+  short_description: "Guide the five-stage workflow and verified handoffs"
+  default_prompt: "Use $workflow-orchestrator to continue the current task from its validated workflow state."

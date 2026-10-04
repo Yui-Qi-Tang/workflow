@@ -1,0 +1,21 @@
+[
+  "AGENTS.md",
+  "README.md",
+  "README.en.md",
+  "README.zh.md",
+  "agent_loop_poc/README.md",
+  "implementer/AGENTS.md",
+  "researcher/AGENTS.md",
+  "reviewer/AGENTS.md",
+  "tasker/AGENTS.md",
+  ".agents/skills/workflow-orchestrator/",
+  "experiments/skill-ab-20261004/",
+  "share/skill-ab-20261004/",
+  "share/workflow-orchestrator-skill-20261004/",
+  "share/workflow-rules-assessment-20261004/",
+  "tasker/skill-ab-20261004.md",
+  "tasker/workflow-orchestrator-skill-20261004.md",
+  "tasker/workflow-rules-assessment-20261004.md",
+  "tasker/commit-workflow-skill-20261004.md",
+  "share/commit-workflow-skill-20261004/"
+]

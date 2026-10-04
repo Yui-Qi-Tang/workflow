@@ -1,0 +1,9 @@
+{
+  "revision": "5b30cb91-78a5-4d22-b2e5-b02ccb7b1840",
+  "input_fingerprints": {
+    "share/commit-workflow-skill-20261004/reviewer/task.md": "6e2a7df9f9ac9a5c4a2bf05e6f6b5bc64dde47c9467331243c061ca7b3c77a9e",
+    "share/commit-workflow-skill-20261004/reviewer/plan.md": "f3e36dac339c04ffddf61e1af53a99c87dcd6cdc350686b5e284353393482741",
+    "share/commit-workflow-skill-20261004/reviewer/impl.md": "a8d250f42f6acdcad1ac0bc68f233943e07382cbef605b2cc06236f0f570f216",
+    "share/commit-workflow-skill-20261004/reviewer/result.md": "60479b429947c3b20d466f8a929c33e13bb6ffbac895bb539289274808999a1c"
+  }
+}

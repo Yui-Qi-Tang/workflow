@@ -1,0 +1,14 @@
+{
+  "check": "report_shape",
+  "status": "passed",
+  "exit_status": 0,
+  "report": {
+    "total": 18,
+    "ids": [
+      "a",
+      "c",
+      "d",
+      "f"
+    ]
+  }
+}

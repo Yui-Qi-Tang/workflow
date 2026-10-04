@@ -1,0 +1,9 @@
+{
+  "installed_path": "/Users/yuki/workspace/workflow/.agents/skills/workflow-orchestrator",
+  "files_sha256": {
+    "SKILL.md": "2ad64d30f06878dfbfa9000dc2f559d23e249dc7d9be4ab724cbc9b2576ac052",
+    "agents/openai.yaml": "8fe7b3d1114878259512fa753858e269b2324032769c88e53541244782817697"
+  },
+  "matches_validated_candidate": true,
+  "scope": "Repository-local two-file instruction-only skill; no user-wide settings changed."
+}

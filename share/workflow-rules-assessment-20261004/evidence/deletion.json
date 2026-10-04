@@ -1,0 +1,44 @@
+{
+  "authorization": "Current human message explicitly requests deletion of go-worker-2026050200.",
+  "deleted_files": [
+    {
+      "path": "share/go-worker-2026050200/implementer/impl.md",
+      "sha256": "78419385c92e53dbbc03d3ef57b4bd5c4acd3e5aedf8089b23fdeecc75ed9ea1"
+    },
+    {
+      "path": "share/go-worker-2026050200/planner/plan.md",
+      "sha256": "8b9fa3a84e398258c52b890e35b4fd0e9c487fa51f84c5ab0b24daef978c84a4"
+    },
+    {
+      "path": "share/go-worker-2026050200/researcher/task.md",
+      "sha256": "cd7bcad209dc86cca1eb6e60395390151a388c36d715014d451350a437837d30"
+    },
+    {
+      "path": "share/go-worker-2026050200/reviewer/impl.md",
+      "sha256": "78419385c92e53dbbc03d3ef57b4bd5c4acd3e5aedf8089b23fdeecc75ed9ea1"
+    },
+    {
+      "path": "share/go-worker-2026050200/reviewer/plan.md",
+      "sha256": "8b9fa3a84e398258c52b890e35b4fd0e9c487fa51f84c5ab0b24daef978c84a4"
+    },
+    {
+      "path": "share/go-worker-2026050200/reviewer/result.md",
+      "sha256": "da3b5b0c5bcc564d77e9bcec74f8bbd3815eac076aca4608ceb1f8284633a049"
+    },
+    {
+      "path": "share/go-worker-2026050200/reviewer/review.md",
+      "sha256": "e759a50906b8c05b8cbbfb31059f3ab4ca34726d683a20726bc1af3a90b27ba0"
+    },
+    {
+      "path": "share/go-worker-2026050200/reviewer/task.md",
+      "sha256": "cd7bcad209dc86cca1eb6e60395390151a388c36d715014d451350a437837d30"
+    },
+    {
+      "path": "tasker/go-worker-2026050200.md",
+      "sha256": "9104c957c445076355dc84e1da3bd895dbf13fad9f4ee833a51254524aac8937"
+    }
+  ],
+  "content_backups_created": false,
+  "file_count": 9,
+  "both_targets_absent": true
+}

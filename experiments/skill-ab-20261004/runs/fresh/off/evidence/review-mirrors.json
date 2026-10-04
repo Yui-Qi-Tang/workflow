@@ -1,0 +1,20 @@
+[
+  {
+    "source": "share/case/researcher/task.md",
+    "mirror": "share/case/reviewer/task.md",
+    "equal": true,
+    "sha256": "67c928fd887904362f1cf9f5bd7ff6da7dc12e842c00b4572ae6b500b62c367f"
+  },
+  {
+    "source": "share/case/planner/plan.md",
+    "mirror": "share/case/reviewer/plan.md",
+    "equal": true,
+    "sha256": "13725a1f11a04c6544b05e8ba45755d2e97e04395a9d41679b204a408e997d92"
+  },
+  {
+    "source": "share/case/implementer/impl.md",
+    "mirror": "share/case/reviewer/impl.md",
+    "equal": true,
+    "sha256": "04e5b3dfc995dac1a3813fd8e8ba68c71a5331af15ddd068646d5e1ad51558c8"
+  }
+]

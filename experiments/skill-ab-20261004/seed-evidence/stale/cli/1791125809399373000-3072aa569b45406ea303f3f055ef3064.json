@@ -1,0 +1,24 @@
+{
+  "start_ns": 1791125809399373000,
+  "end_ns": 1791125809403773000,
+  "argv": [
+    "validate",
+    "case",
+    "tasker"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"schema_version\": \"agent_loop_poc.v2\",\n  \"task_id\": \"case\",\n  \"status\": \"validated\",\n  \"current_stage\": \"tasker\",\n  \"next_stage\": null,\n  \"last_completed_stage\": \"tasker\",\n  \"return_target\": null,\n  \"needs_user_input\": false,\n  \"reason\": \"Current prefix and saved artifact passed validation; this does not authorize routing.\",\n  \"reason_code\": \"artifact_valid\",\n  \"blocker\": null,\n  \"invalidated_artifacts\": [],\n  \"artifacts\": {\n    \"tasker_input\": true,\n    \"researcher_task\": true,\n    \"planner_plan\": false,\n    \"implementer_impl\": false,\n    \"reviewer_result\": false,\n    \"reviewer_review\": false\n  },\n  \"history\": [],\n  \"updated_at\": \"2026-10-04T14:56:49+00:00\",\n  \"validated_artifact\": {\n    \"path\": \"share/case/researcher/task.md\",\n    \"sha256\": \"1cd729313d2ab10d9e9ee466a05ce0dff9e89dbf163daad3a46c5f9e9f5e14e0\"\n  }\n}\n",
+  "stderr": "",
+  "artifacts_before": {
+    "share/case/researcher/task.md": {
+      "sha256": "1cd729313d2ab10d9e9ee466a05ce0dff9e89dbf163daad3a46c5f9e9f5e14e0",
+      "mtime_ns": 1791125809366949034
+    }
+  },
+  "artifacts_after": {
+    "share/case/researcher/task.md": {
+      "sha256": "1cd729313d2ab10d9e9ee466a05ce0dff9e89dbf163daad3a46c5f9e9f5e14e0",
+      "mtime_ns": 1791125809366949034
+    }
+  }
+}

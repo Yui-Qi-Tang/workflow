@@ -1,0 +1,31 @@
+{
+  "observed_exit_status": 0,
+  "output": {
+    "schema_version": "agent_loop_poc.v2",
+    "task_id": "commit-workflow-skill-20261004",
+    "status": "validated",
+    "current_stage": "tasker",
+    "next_stage": null,
+    "last_completed_stage": "tasker",
+    "return_target": null,
+    "needs_user_input": false,
+    "reason": "Current prefix and saved artifact passed validation; this does not authorize routing.",
+    "reason_code": "artifact_valid",
+    "blocker": null,
+    "invalidated_artifacts": [],
+    "artifacts": {
+      "tasker_input": true,
+      "researcher_task": true,
+      "planner_plan": false,
+      "implementer_impl": false,
+      "reviewer_result": false,
+      "reviewer_review": false
+    },
+    "history": [],
+    "updated_at": "2026-10-04T15:29:28+00:00",
+    "validated_artifact": {
+      "path": "share/commit-workflow-skill-20261004/researcher/task.md",
+      "sha256": "6e2a7df9f9ac9a5c4a2bf05e6f6b5bc64dde47c9467331243c061ca7b3c77a9e"
+    }
+  }
+}

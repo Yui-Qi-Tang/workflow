@@ -1,0 +1,12 @@
+{
+  "status": "confirmed",
+  "reason": "Main agent manually read every visible tool-call body. All calls use local exec_command with assigned workdir; reads/writes stay in authorized root, controller operations use recorder, no audit/tooling edits or peer/network/memory/skill-body bypasses. On loaded body before workflow; off did not load body.",
+  "audited_tool_calls": 15,
+  "tool_trace_sha256": "1d9306fee250e95ee1b1cedc37945047f306e6d57fc987040d83cab1eb4f7258",
+  "evidence": [
+    "transcripts/fresh/on/tool-and-public-messages.jsonl",
+    "transcripts/fresh/on/metadata.json",
+    "runs/fresh/on/audit/"
+  ],
+  "limits": "Confirmed against available complete visible tool trace and supplied prompt, not OS-level confinement or proof of unobservable internal use. Ambient catalog awareness is shared; encrypted NEW_TASK wrapper is represented by frozen parent dispatch prompt."
+}

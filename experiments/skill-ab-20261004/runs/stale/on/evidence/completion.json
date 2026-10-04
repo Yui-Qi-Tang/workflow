@@ -1,0 +1,24 @@
+{
+  "terminal_state": "completed",
+  "execution_mode": "same_invocation",
+  "limitation": "Retained context; stages and review are not independently isolated.",
+  "skill_body_loaded": true,
+  "skill_load_command": "python3 -B load_skill.py",
+  "reviewer_validation": {
+    "command": "python3 -B agent_loop_poc/loop.py validate case reviewer",
+    "observed_exit_code": 0,
+    "status": "validated",
+    "path": "share/case/reviewer/review.md",
+    "sha256": "f0cd75f26429e4403a39ebcf3ca8d0e29c58a7eb8e49fac33edc619caa235a6b"
+  },
+  "final_next": {
+    "observed_exit_code": 0,
+    "stdout": "done\nreview_success: Current artifact chain passed structural and declared-result checks.\n"
+  },
+  "final_status": {
+    "observed_exit_code": 0,
+    "stdout": "task=case status=completed current=reviewer next=None needs_user_input=False\nreview_success: Current artifact chain passed structural and declared-result checks.\n"
+  },
+  "cleanup": "No scratch created. Required report, stage records, evidence and automatic audit retained.",
+  "blocking_questions": []
+}

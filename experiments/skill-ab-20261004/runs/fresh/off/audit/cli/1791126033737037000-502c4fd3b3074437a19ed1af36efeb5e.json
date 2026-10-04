@@ -1,0 +1,13 @@
+{
+  "start_ns": 1791126033737037000,
+  "end_ns": 1791126033741414000,
+  "argv": [
+    "next",
+    "case"
+  ],
+  "exit_code": 0,
+  "stdout": "tasker\nstage_ready: Run tasker with the current required inputs.\n",
+  "stderr": "",
+  "artifacts_before": {},
+  "artifacts_after": {}
+}

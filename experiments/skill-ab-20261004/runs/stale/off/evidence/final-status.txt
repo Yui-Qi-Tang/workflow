@@ -1,0 +1,2 @@
+task=case status=completed current=reviewer next=None needs_user_input=False
+review_success: Current artifact chain passed structural and declared-result checks.

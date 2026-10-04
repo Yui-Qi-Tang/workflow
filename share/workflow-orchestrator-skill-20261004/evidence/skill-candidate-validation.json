@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "-B",
+    "/Users/yuki/.codex/skills/.system/skill-creator/scripts/quick_validate.py",
+    "share/workflow-orchestrator-skill-20261004/evidence/skill-candidate/workflow-orchestrator"
+  ],
+  "exit_code": 0,
+  "stdout": "Skill is valid!\n",
+  "stderr": "",
+  "ui_metadata_valid": true,
+  "implicit_invocation": true,
+  "yaml_source": "/opt/homebrew/Cellar/hf/2.0.0/libexec/lib/python3.14/site-packages/yaml/__init__.py",
+  "files_sha256": {
+    "SKILL.md": "2ad64d30f06878dfbfa9000dc2f559d23e249dc7d9be4ab724cbc9b2576ac052",
+    "agents/openai.yaml": "8fe7b3d1114878259512fa753858e269b2324032769c88e53541244782817697"
+  },
+  "environment_recovery": "System and bundled Python lacked PyYAML; reused the existing Homebrew hf PyYAML package via process-local PYTHONPATH. No dependency installation."
+}

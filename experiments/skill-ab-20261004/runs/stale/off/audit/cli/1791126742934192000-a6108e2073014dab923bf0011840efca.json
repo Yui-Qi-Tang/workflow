@@ -1,0 +1,79 @@
+{
+  "start_ns": 1791126742934192000,
+  "end_ns": 1791126742938537000,
+  "argv": [
+    "status",
+    "case"
+  ],
+  "exit_code": 0,
+  "stdout": "task=case status=completed current=reviewer next=None needs_user_input=False\nreview_success: Current artifact chain passed structural and declared-result checks.\n",
+  "stderr": "",
+  "artifacts_before": {
+    "share/case/implementer/impl.md": {
+      "sha256": "c2c9df99cd43507b0adc62c619df253c7be8f306830931b0609caaaf1255c445",
+      "mtime_ns": 1791126607727214572
+    },
+    "share/case/planner/plan.md": {
+      "sha256": "2b8fc148b4b5f693892e2511e1032e38175c74b592f8aaa9f06820f6d2233ccb",
+      "mtime_ns": 1791126558266414606
+    },
+    "share/case/researcher/task.md": {
+      "sha256": "cd52ae7a3ef3b358515681dae670affa0a949edf478911de7cc1c045f435cbd0",
+      "mtime_ns": 1791126511707920067
+    },
+    "share/case/reviewer/impl.md": {
+      "sha256": "c2c9df99cd43507b0adc62c619df253c7be8f306830931b0609caaaf1255c445",
+      "mtime_ns": 1791126686375237842
+    },
+    "share/case/reviewer/plan.md": {
+      "sha256": "2b8fc148b4b5f693892e2511e1032e38175c74b592f8aaa9f06820f6d2233ccb",
+      "mtime_ns": 1791126686375109466
+    },
+    "share/case/reviewer/result.md": {
+      "sha256": "ab2c5391333a62f695707b025e42f7dad2b915007e741aa5d5f7cb3642374be5",
+      "mtime_ns": 1791126671614498721
+    },
+    "share/case/reviewer/review.md": {
+      "sha256": "8bbc3e0b3ec07075fee690a011eea6bd3020354c1b4c4f26bac0d69bf7809e61",
+      "mtime_ns": 1791126731032196065
+    },
+    "share/case/reviewer/task.md": {
+      "sha256": "cd52ae7a3ef3b358515681dae670affa0a949edf478911de7cc1c045f435cbd0",
+      "mtime_ns": 1791126686374959381
+    }
+  },
+  "artifacts_after": {
+    "share/case/implementer/impl.md": {
+      "sha256": "c2c9df99cd43507b0adc62c619df253c7be8f306830931b0609caaaf1255c445",
+      "mtime_ns": 1791126607727214572
+    },
+    "share/case/planner/plan.md": {
+      "sha256": "2b8fc148b4b5f693892e2511e1032e38175c74b592f8aaa9f06820f6d2233ccb",
+      "mtime_ns": 1791126558266414606
+    },
+    "share/case/researcher/task.md": {
+      "sha256": "cd52ae7a3ef3b358515681dae670affa0a949edf478911de7cc1c045f435cbd0",
+      "mtime_ns": 1791126511707920067
+    },
+    "share/case/reviewer/impl.md": {
+      "sha256": "c2c9df99cd43507b0adc62c619df253c7be8f306830931b0609caaaf1255c445",
+      "mtime_ns": 1791126686375237842
+    },
+    "share/case/reviewer/plan.md": {
+      "sha256": "2b8fc148b4b5f693892e2511e1032e38175c74b592f8aaa9f06820f6d2233ccb",
+      "mtime_ns": 1791126686375109466
+    },
+    "share/case/reviewer/result.md": {
+      "sha256": "ab2c5391333a62f695707b025e42f7dad2b915007e741aa5d5f7cb3642374be5",
+      "mtime_ns": 1791126671614498721
+    },
+    "share/case/reviewer/review.md": {
+      "sha256": "8bbc3e0b3ec07075fee690a011eea6bd3020354c1b4c4f26bac0d69bf7809e61",
+      "mtime_ns": 1791126731032196065
+    },
+    "share/case/reviewer/task.md": {
+      "sha256": "cd52ae7a3ef3b358515681dae670affa0a949edf478911de7cc1c045f435cbd0",
+      "mtime_ns": 1791126686374959381
+    }
+  }
+}

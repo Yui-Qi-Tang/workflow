@@ -1,0 +1,6 @@
+{
+  "command": "python3 -B agent_loop_poc/loop.py validate skill-ab-20261004 reviewer",
+  "observed_exit_status": 0,
+  "validated_path": "share/skill-ab-20261004/reviewer/review.md",
+  "sha256": "3acf673dc7f794aaa2dd89dabdf2b2742d5625e1b8d0f773305c819ee9cde364"
+}

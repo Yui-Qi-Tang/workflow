@@ -1,0 +1,166 @@
+{
+  "scope": "Six operative AGENTS plus current controller/README. Frozen experiment copies excluded from current-rule recommendations.",
+  "decision": "Targeted AGENTS edits are justified. One thin workflow-orchestrator skill is worth a bounded trial but is optional; no measured efficacy claim.",
+  "graph_evidence": {
+    "tier_attempted": "verify",
+    "project": "Users-yuki-workspace-workflow",
+    "list_projects_complete": true,
+    "project_indexed": false,
+    "generation": "unavailable",
+    "search_and_coverage": "project not found or not indexed",
+    "fallback": "Direct reads of all six operative AGENTS, contracts.py, loop.py and README; no graph completeness claim."
+  },
+  "findings": [
+    {
+      "id": "f1",
+      "category": "confirmed_specification_omission",
+      "priority": "first",
+      "claim": "Some nested field types and enum values remain implicit in role docs although the controller enforces them.",
+      "evidence": [
+        {
+          "path": "implementer/AGENTS.md",
+          "line": 81,
+          "observation": "validation_results[].required is named without its boolean type."
+        },
+        {
+          "path": "agent_loop_poc/contracts.py",
+          "line": 73,
+          "observation": "required is enforced as bool."
+        },
+        {
+          "path": "researcher/AGENTS.md",
+          "line": 78,
+          "observation": "failure_modes[].likely_stage is named without enumerating allowed values."
+        },
+        {
+          "path": "agent_loop_poc/contracts.py",
+          "line": 58,
+          "observation": "likely_stage must be one of STAGES."
+        },
+        {
+          "path": "tasker/AGENTS.md",
+          "line": 74,
+          "observation": "conflicts[].blocks_execution is named without an explicit boolean type."
+        },
+        {
+          "path": "agent_loop_poc/contracts.py",
+          "line": 48,
+          "observation": "blocks_execution is bool."
+        }
+      ],
+      "recommendation": "Complete nested types/enums and maintain a doc-controller consistency check. The planner array issue is already explicitly fixed; do not describe it as still broken."
+    },
+    {
+      "id": "f2",
+      "category": "clarification_recommendation",
+      "priority": "second",
+      "claim": "Fresh invocation is the stated isolation goal; main-owned same-invocation execution is a limited fallback. These are different evidence modes, not an established rule contradiction.",
+      "evidence": [
+        {
+          "path": "AGENTS.md",
+          "line": 65,
+          "observation": "Each stage intended fresh invocation."
+        },
+        {
+          "path": "AGENTS.md",
+          "line": 88,
+          "observation": "Fallback limits authoritative task context."
+        },
+        {
+          "path": "AGENTS.md",
+          "line": 73,
+          "observation": "Outer authorization must carry scoped exceptions."
+        }
+      ],
+      "recommendation": "Explain how the fallback operates under the human only-opposition restriction and record actual execution mode. Preserve the original isolation goal for all tasks; do not limit it to experiments or reuse the prior Luna exception."
+    },
+    {
+      "id": "f3",
+      "category": "documentation_organization",
+      "priority": "second",
+      "claim": "Orchestrator duties already exist but are distributed between root rules and CLI README.",
+      "evidence": [
+        {
+          "path": "AGENTS.md",
+          "line": 77,
+          "observation": "Orchestrator verifies human authority."
+        },
+        {
+          "path": "AGENTS.md",
+          "line": 223,
+          "observation": "Report actual validation exit/digest outside artifact and recheck routing."
+        },
+        {
+          "path": "agent_loop_poc/README.md",
+          "line": 55,
+          "observation": "Orchestrator owns review mirrors."
+        },
+        {
+          "path": "agent_loop_poc/README.md",
+          "line": 134,
+          "observation": "Dispatch prepares message/metadata, never launches agent."
+        }
+      ],
+      "recommendation": "Add a short orchestrator entrypoint referencing existing operations and owners. A mandatory receipt location would be new policy, not a repair of a missing existing requirement."
+    },
+    {
+      "id": "f4",
+      "category": "optional_policy_question",
+      "priority": "later",
+      "claim": "All tasks currently require five stages, including this bounded cleanup/assessment.",
+      "evidence": [
+        {
+          "path": "AGENTS.md",
+          "line": 51,
+          "observation": "All tasks MUST use full pipeline."
+        }
+      ],
+      "recommendation": "If administrative overhead becomes a concern, explicitly decide whether pure questions or maintenance need a lighter mode. Keep all five stages until the user approves any policy change."
+    }
+  ],
+  "keep": [
+    "Saved-byte validation before handoff",
+    "Scoped outer authorization and human provenance boundary",
+    "Revision plus input fingerprints",
+    "Review mirrors and cross-stage required checks",
+    "Structured blockers and earliest supported failure attribution",
+    "Schema/hash agreement is not proof of semantics or actual execution"
+  ],
+  "skill_proposal": {
+    "name": "workflow-orchestrator",
+    "necessity": "Optional operating aid, not required for controller correctness.",
+    "trigger": "Operating or resuming this repository workflow and preparing review; no blanket trigger for unrelated coding.",
+    "contents": [
+      "Locate operative root/stage rules and task requirements.",
+      "Check current route and capture fresh input metadata using existing CLI.",
+      "Carry verified authority in every actual fresh dispatch; no new permission created by the skill.",
+      "Guide save, validate actual bytes, report exit/digest, prepare review mirrors and recheck route.",
+      "On stale input, reread/reproduce affected stages; do not replace hashes or blindly retry side effects."
+    ],
+    "boundaries": [
+      "Do not copy the five schemas or create five role skills.",
+      "Keep authoritative task requirements and task-specific validation/cleanup/rollback in task files.",
+      "Reference existing reusable CLI/playbooks; root AGENTS already permits project resources referenced by tasks.",
+      "Do not claim isolation, truthful execution or improved model success from skill presence."
+    ],
+    "trial_acceptance": [
+      "Correct routing under valid, malformed, stale and blocked inputs.",
+      "No reuse of another task authorization exception.",
+      "No claimed fresh invocation for same-conversation fallback.",
+      "Compare with the same existing CLI workflow before making efficacy claims."
+    ]
+  },
+  "counterargument_disposition": [
+    "Accepted: orchestrator mechanisms already exist; describe consolidation, not absence.",
+    "Accepted: fallback is not permission to redefine all normal tasks as non-isolated.",
+    "Accepted: no current concrete stage/root precedence conflict established; no mandatory precedence rewrite recommended.",
+    "Accepted: skill utility remains a hypothesis; preserve task authority and avoid duplicated runbooks."
+  ],
+  "limits": [
+    "No rules, skill, controller or frozen experiments changed.",
+    "No new model experiment or efficacy measurement.",
+    "Graph unavailable; bounded direct-source assessment only.",
+    "This task used the main-agent same-invocation fallback."
+  ],
+  "orchestration_correction": "Initial helper mistakenly parsed the text output of next as JSON after tasker validation. Corrected to inspect its documented first-line decision; validated tasker bytes were unchanged, and no deletion or later stage ran before a successful route check."
+}

@@ -1,0 +1,23 @@
+{
+  "start_ns": 1791126096523045000,
+  "end_ns": 1791126096527665000,
+  "argv": [
+    "next",
+    "case"
+  ],
+  "exit_code": 0,
+  "stdout": "researcher\nstage_ready: Run researcher with the current required inputs.\n",
+  "stderr": "",
+  "artifacts_before": {
+    "share/case/researcher/task.md": {
+      "sha256": "949064042bb7cf858769dbb6930d54d054478d22f4426cff7dace20e1ec0298a",
+      "mtime_ns": 1791126088437317174
+    }
+  },
+  "artifacts_after": {
+    "share/case/researcher/task.md": {
+      "sha256": "949064042bb7cf858769dbb6930d54d054478d22f4426cff7dace20e1ec0298a",
+      "mtime_ns": 1791126088437317174
+    }
+  }
+}

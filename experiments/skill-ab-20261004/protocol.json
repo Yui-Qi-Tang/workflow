@@ -1,0 +1,114 @@
+{
+  "question": "Incremental effect of explicitly loading/requesting use of the skill body over identical current rules/README/controller.",
+  "cells": [
+    {
+      "case": "fresh",
+      "arm": "off",
+      "root": "/Users/yuki/workspace/workflow/experiments/skill-ab-20261004/runs/fresh/off",
+      "dispatch": "/Users/yuki/workspace/workflow/experiments/skill-ab-20261004/dispatch/fresh/off",
+      "model": "inherit_parent",
+      "reasoning_effort": "inherit_parent",
+      "fork_turns": "none"
+    },
+    {
+      "case": "fresh",
+      "arm": "on",
+      "root": "/Users/yuki/workspace/workflow/experiments/skill-ab-20261004/runs/fresh/on",
+      "dispatch": "/Users/yuki/workspace/workflow/experiments/skill-ab-20261004/dispatch/fresh/on",
+      "model": "inherit_parent",
+      "reasoning_effort": "inherit_parent",
+      "fork_turns": "none"
+    },
+    {
+      "case": "stale",
+      "arm": "on",
+      "root": "/Users/yuki/workspace/workflow/experiments/skill-ab-20261004/runs/stale/on",
+      "dispatch": "/Users/yuki/workspace/workflow/experiments/skill-ab-20261004/dispatch/stale/on",
+      "model": "inherit_parent",
+      "reasoning_effort": "inherit_parent",
+      "fork_turns": "none"
+    },
+    {
+      "case": "stale",
+      "arm": "off",
+      "root": "/Users/yuki/workspace/workflow/experiments/skill-ab-20261004/runs/stale/off",
+      "dispatch": "/Users/yuki/workspace/workflow/experiments/skill-ab-20261004/dispatch/stale/off",
+      "model": "inherit_parent",
+      "reasoning_effort": "inherit_parent",
+      "fork_turns": "none"
+    },
+    {
+      "case": "blocked",
+      "arm": "off",
+      "root": "/Users/yuki/workspace/workflow/experiments/skill-ab-20261004/runs/blocked/off",
+      "dispatch": "/Users/yuki/workspace/workflow/experiments/skill-ab-20261004/dispatch/blocked/off",
+      "model": "inherit_parent",
+      "reasoning_effort": "inherit_parent",
+      "fork_turns": "none"
+    },
+    {
+      "case": "blocked",
+      "arm": "on",
+      "root": "/Users/yuki/workspace/workflow/experiments/skill-ab-20261004/runs/blocked/on",
+      "dispatch": "/Users/yuki/workspace/workflow/experiments/skill-ab-20261004/dispatch/blocked/on",
+      "model": "inherit_parent",
+      "reasoning_effort": "inherit_parent",
+      "fork_turns": "none"
+    }
+  ],
+  "denominator": 6,
+  "paired_cases": 3,
+  "attempts_per_cell": 1,
+  "timeout_seconds": 600,
+  "model_and_effort": "Inherited identically with no overrides; provider snapshot, sampling seed and temperature not exposed.",
+  "oracle": {
+    "fresh": {
+      "state": "completed",
+      "report": {
+        "total": 18,
+        "ids": [
+          "a",
+          "c",
+          "d",
+          "f"
+        ]
+      }
+    },
+    "stale": {
+      "state": "completed",
+      "report": {
+        "total": 18,
+        "ids": [
+          "a",
+          "c",
+          "d",
+          "f"
+        ]
+      },
+      "all_seed_revisions_replaced": true
+    },
+    "blocked": {
+      "state": "waiting_user",
+      "no_downstream_or_report": true,
+      "unresolved_question_preserved": true
+    }
+  },
+  "observed_case_success": "Joint expected semantic result or block, terminal route, saved-byte validation receipts for current stage artifacts before downstream handoff, protected initial-file hash preservation.",
+  "receipt_rule": "For produced artifacts, a passed CLI validate receipt must name the current final artifact SHA256. Choose matching receipts in producer order whose before snapshot does not already contain the current final digest of later stage outputs (old synthetic descendants may still exist). An unchanged valid blocked seed may instead have a recorded next/status inspection returning wait/waiting_user, with matching tasker bytes. Self-correction within one invocation is allowed; failed attempts remain in logs.",
+  "qualified_success": "Observed case success is only qualified for skill-effect comparison when skill-body exposure and read/write scope can be audited from available tool traces plus receipts. Missing coverage is unknown, not compliant. Keep all six cells in reports, including unknowns/failures/timeouts.",
+  "limits": [
+    "Three heterogeneous pairs with one run each: no statistical or general efficacy claim.",
+    "Both arms may see the same ambient skill name/description and optional links; off excludes body, not awareness.",
+    "Intervention includes attention/reading/use instruction; not automatic discovery efficacy or a length-matched generic-prompt comparison.",
+    "Fresh top-level trial invocations; roles inside each trial share one invocation.",
+    "Filesystem allowlist is instructional, not OS-enforced. CLI receipts cover instrumented calls, not all tools. Full tool transcript availability will be disclosed.",
+    "Wall time descriptive; tokens/cost are not inferred if unavailable."
+  ],
+  "withheld": [
+    "Private evaluator/protocol outside assigned root",
+    "Peer results",
+    "Previous conversation",
+    "Parent repairs or outcome-driven hints"
+  ],
+  "freeze_policy": "No input, scorer or criterion changes after first dispatch; preserve errors as findings."
+}

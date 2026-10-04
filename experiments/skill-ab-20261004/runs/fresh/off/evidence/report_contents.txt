@@ -1,0 +1,6 @@
+{
+  "command": "python3 -B public_check.py",
+  "exit_status": 0,
+  "stdout": "report_contents: passed\n",
+  "stderr": ""
+}

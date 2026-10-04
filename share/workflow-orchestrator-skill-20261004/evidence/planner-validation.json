@@ -1,0 +1,32 @@
+{
+  "exit_code": 0,
+  "output": {
+    "schema_version": "agent_loop_poc.v2",
+    "task_id": "workflow-orchestrator-skill-20261004",
+    "status": "validated",
+    "current_stage": "planner",
+    "next_stage": null,
+    "last_completed_stage": "planner",
+    "return_target": null,
+    "needs_user_input": false,
+    "reason": "Current prefix and saved artifact passed validation; this does not authorize routing.",
+    "reason_code": "artifact_valid",
+    "blocker": null,
+    "invalidated_artifacts": [],
+    "artifacts": {
+      "tasker_input": true,
+      "researcher_task": true,
+      "planner_plan": true,
+      "implementer_impl": true,
+      "reviewer_result": false,
+      "reviewer_review": false
+    },
+    "history": [],
+    "updated_at": "2026-10-04T14:19:27+00:00",
+    "validated_artifact": {
+      "path": "share/workflow-orchestrator-skill-20261004/implementer/impl.md",
+      "sha256": "fffa24f890145d784ed553aac7ed6553949d5469261793239646da3640ec72e6"
+    }
+  },
+  "stderr": ""
+}

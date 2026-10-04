@@ -1,0 +1,59 @@
+{
+  "execution_mode": "same_invocation",
+  "limitation": "Retained context; no independent stage isolation or review.",
+  "skill_body_loaded": true,
+  "validation_receipts": [
+    {
+      "stage": "tasker",
+      "command": "python3 -B agent_loop_poc/loop.py validate case tasker",
+      "observed_exit_code": 0,
+      "status": "validated",
+      "path": "share/case/researcher/task.md",
+      "sha256": "c3718f6962d0f74a5039c3f668462dd732790fa94d0a31cf41e6fed17f0fe883"
+    },
+    {
+      "stage": "researcher",
+      "command": "python3 -B agent_loop_poc/loop.py validate case researcher",
+      "observed_exit_code": 0,
+      "status": "validated",
+      "path": "share/case/planner/plan.md",
+      "sha256": "8715693b3f7be88d54df68559a9e8ff8e603b7b3a7201a7bc5c754896a33afde"
+    },
+    {
+      "stage": "planner",
+      "command": "python3 -B agent_loop_poc/loop.py validate case planner",
+      "observed_exit_code": 0,
+      "status": "validated",
+      "path": "share/case/implementer/impl.md",
+      "sha256": "36bf22f1476ee95edfa7a2b24041ace99d67d9c6f166556f354dbc643778a99f"
+    },
+    {
+      "stage": "implementer",
+      "command": "python3 -B agent_loop_poc/loop.py validate case implementer",
+      "observed_exit_code": 0,
+      "status": "validated",
+      "path": "share/case/reviewer/result.md",
+      "sha256": "eba17d5ad582fe38284673075cd3b494cc552702634a9aa685d8e456a3ceca78"
+    }
+  ],
+  "review_mirrors": [
+    {
+      "source": "share/case/researcher/task.md",
+      "mirror": "share/case/reviewer/task.md",
+      "identical": true,
+      "sha256": "c3718f6962d0f74a5039c3f668462dd732790fa94d0a31cf41e6fed17f0fe883"
+    },
+    {
+      "source": "share/case/planner/plan.md",
+      "mirror": "share/case/reviewer/plan.md",
+      "identical": true,
+      "sha256": "8715693b3f7be88d54df68559a9e8ff8e603b7b3a7201a7bc5c754896a33afde"
+    },
+    {
+      "source": "share/case/implementer/impl.md",
+      "mirror": "share/case/reviewer/impl.md",
+      "identical": true,
+      "sha256": "36bf22f1476ee95edfa7a2b24041ace99d67d9c6f166556f354dbc643778a99f"
+    }
+  ]
+}

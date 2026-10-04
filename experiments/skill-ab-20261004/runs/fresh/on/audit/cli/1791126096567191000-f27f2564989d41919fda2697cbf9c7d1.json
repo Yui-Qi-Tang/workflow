@@ -1,0 +1,24 @@
+{
+  "start_ns": 1791126096567191000,
+  "end_ns": 1791126096571002000,
+  "argv": [
+    "inputs",
+    "case",
+    "researcher"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"revision\": \"22eda9e5-b153-4ce8-b8b6-a7a844bf807a\",\n  \"input_fingerprints\": {\n    \"share/case/researcher/task.md\": \"949064042bb7cf858769dbb6930d54d054478d22f4426cff7dace20e1ec0298a\"\n  }\n}\n",
+  "stderr": "",
+  "artifacts_before": {
+    "share/case/researcher/task.md": {
+      "sha256": "949064042bb7cf858769dbb6930d54d054478d22f4426cff7dace20e1ec0298a",
+      "mtime_ns": 1791126088437317174
+    }
+  },
+  "artifacts_after": {
+    "share/case/researcher/task.md": {
+      "sha256": "949064042bb7cf858769dbb6930d54d054478d22f4426cff7dace20e1ec0298a",
+      "mtime_ns": 1791126088437317174
+    }
+  }
+}

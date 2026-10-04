@@ -1,0 +1,20 @@
+{
+  "AGENTS.md": "913a8138f9862057930e274fc6aadbac4328d318f19ff079bbdd97bdb65fe39c",
+  "README.en.md": "df27a947fa6b133c54d969e289bc2bc30f742a1cb96d5fcd6f9b775f7e0ac55d",
+  "README.md": "842d84e6cdb50243bd86716cf5b7573f223eeada4d87e8eceaecd8a42a944a76",
+  "README.zh.md": "14b3ea0c6f9adb6a3fce8743f4c2a56312c086842a2e6d11e23363d28f7387cb",
+  "agent_loop_poc/README.md": "cfaaedb310432752c17b91e153aaf7223af132750be928d00da105e50e581eeb",
+  "agent_loop_poc/core/contracts.py": "4bf2446a574a4bf1d2be3faa5ea07a2fd2eaff909dcd73b15d888ee9b57aae06",
+  "agent_loop_poc/core/loop.py": "414f52451dcc8e74b9cab3e0d58a8371ebe5faf66b202e167c94b031a96ba6de",
+  "agent_loop_poc/loop.py": "5683edbbd4a296f21df33c4c18fe103861f475eabddffe80e2c6d5619219a277",
+  "guidance/skills/workflow-orchestrator/SKILL.md": "2ad64d30f06878dfbfa9000dc2f559d23e249dc7d9be4ab724cbc9b2576ac052",
+  "implementer/AGENTS.md": "57af0218933831d6ba83975ba31245474e8c6cc8800afc20a758a764081772eb",
+  "load_skill.py": "cbbc91d52f9925f678121d62329d5471e13f12fe2522514a69593a6621e7032b",
+  "planner/AGENTS.md": "c354c241562c9211b2f7a692623de01a1b7dcf21d5777839013e2c3bb2b668e6",
+  "public_check.py": "0154dec6ee906adf5b5a27ce3b949eeb26f4a12c7c4266d933ab8162798f217f",
+  "records.json": "5afdc8e7077cd8de2910355da569153579e4cc65a906b04cd387bd8db9bd32dc",
+  "researcher/AGENTS.md": "8d1c7ffac5ec488c4b2b134edeb88eb2f6a3f552cadec9663b137352524f8280",
+  "reviewer/AGENTS.md": "abd0880f658f140fad2bcb64a6af8ba36b54654a461eb664e490d4461a9bf1cc",
+  "tasker/AGENTS.md": "9d06698a64d14906e7779116aa10223bda1562bc7e671afa93f6bc3265782d93",
+  "tasker/case.md": "b9427aeb10681ee8fe8968b5a47d8671aecf2dcbec47891c2d817353b07f7b04"
+}

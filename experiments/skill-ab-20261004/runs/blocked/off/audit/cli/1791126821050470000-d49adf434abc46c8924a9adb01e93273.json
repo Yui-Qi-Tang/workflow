@@ -1,0 +1,23 @@
+{
+  "start_ns": 1791126821050470000,
+  "end_ns": 1791126821054271000,
+  "argv": [
+    "status",
+    "case"
+  ],
+  "exit_code": 0,
+  "stdout": "task=case status=waiting_user current=tasker next=None needs_user_input=True\nuser_decision: Resolve the structured blocking question, approval or proposed task update.\n",
+  "stderr": "",
+  "artifacts_before": {
+    "share/case/researcher/task.md": {
+      "sha256": "15269cb044077b725a45ba7f0af96d8473a72b11b508b38a40e3ef342e0eb7bf",
+      "mtime_ns": 1791125809602127806
+    }
+  },
+  "artifacts_after": {
+    "share/case/researcher/task.md": {
+      "sha256": "15269cb044077b725a45ba7f0af96d8473a72b11b508b38a40e3ef342e0eb7bf",
+      "mtime_ns": 1791125809602127806
+    }
+  }
+}

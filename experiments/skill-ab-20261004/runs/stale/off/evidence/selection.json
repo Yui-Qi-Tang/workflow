@@ -1,0 +1,75 @@
+{
+  "latest": {
+    "a": {
+      "id": "a",
+      "revision": 2,
+      "amount": 12,
+      "state": "active"
+    },
+    "b": {
+      "id": "b",
+      "revision": 2,
+      "amount": 8,
+      "state": "canceled"
+    },
+    "c": {
+      "id": "c",
+      "revision": 1,
+      "amount": 5,
+      "state": "active"
+    },
+    "d": {
+      "id": "d",
+      "revision": 1,
+      "amount": -3,
+      "state": "active"
+    },
+    "e": {
+      "id": "e",
+      "revision": 1,
+      "amount": 7,
+      "state": "pending"
+    },
+    "f": {
+      "id": "f",
+      "revision": 1,
+      "amount": 4,
+      "state": "active"
+    }
+  },
+  "active": [
+    {
+      "id": "a",
+      "revision": 2,
+      "amount": 12,
+      "state": "active"
+    },
+    {
+      "id": "c",
+      "revision": 1,
+      "amount": 5,
+      "state": "active"
+    },
+    {
+      "id": "d",
+      "revision": 1,
+      "amount": -3,
+      "state": "active"
+    },
+    {
+      "id": "f",
+      "revision": 1,
+      "amount": 4,
+      "state": "active"
+    }
+  ],
+  "report": {
+    "total": 18,
+    "ids": [
+      "a",
+      "c",
+      "d",
+      "f"
+    ]
+  }
+}

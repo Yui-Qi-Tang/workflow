@@ -1,0 +1,25 @@
+{
+  "report_contents": {
+    "command": [
+      "python3",
+      "-B",
+      "public_check.py"
+    ],
+    "exit_code": 0,
+    "stdout": "report_contents: passed\n",
+    "stderr": ""
+  },
+  "report_shape_and_reconciliation": {
+    "status": "passed",
+    "evidence": "Exact keys/types and total 12+5-3+4=18, ids a,c,d,f verified."
+  },
+  "report": {
+    "total": 18,
+    "ids": [
+      "a",
+      "c",
+      "d",
+      "f"
+    ]
+  }
+}

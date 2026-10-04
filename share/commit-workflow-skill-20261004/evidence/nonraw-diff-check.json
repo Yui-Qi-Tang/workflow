@@ -1,0 +1,20 @@
+{
+  "command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check",
+    "--",
+    ".",
+    ":(exclude)experiments/skill-ab-20261004/transcripts/blocked/off/calls.txt",
+    ":(exclude)experiments/skill-ab-20261004/transcripts/blocked/on/calls.txt",
+    ":(exclude)experiments/skill-ab-20261004/transcripts/fresh/off/calls.txt",
+    ":(exclude)experiments/skill-ab-20261004/transcripts/fresh/on/calls.txt",
+    ":(exclude)experiments/skill-ab-20261004/transcripts/stale/off/calls.txt",
+    ":(exclude)experiments/skill-ab-20261004/transcripts/stale/on/calls.txt"
+  ],
+  "exit_status": 0,
+  "stdout": "",
+  "stderr": "",
+  "raw_findings_policy": "Preserve all six existing raw transcript EOF blank lines; all other staged files pass."
+}

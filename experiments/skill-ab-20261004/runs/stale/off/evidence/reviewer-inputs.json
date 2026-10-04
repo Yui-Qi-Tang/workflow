@@ -1,0 +1,9 @@
+{
+  "revision": "46d377dc-7d99-4213-88bc-174e183ec03e",
+  "input_fingerprints": {
+    "share/case/reviewer/task.md": "cd52ae7a3ef3b358515681dae670affa0a949edf478911de7cc1c045f435cbd0",
+    "share/case/reviewer/plan.md": "2b8fc148b4b5f693892e2511e1032e38175c74b592f8aaa9f06820f6d2233ccb",
+    "share/case/reviewer/impl.md": "c2c9df99cd43507b0adc62c619df253c7be8f306830931b0609caaaf1255c445",
+    "share/case/reviewer/result.md": "ab2c5391333a62f695707b025e42f7dad2b915007e741aa5d5f7cb3642374be5"
+  }
+}

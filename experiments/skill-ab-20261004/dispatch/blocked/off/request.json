@@ -1,0 +1,10 @@
+{
+  "case": "blocked",
+  "arm": "off",
+  "requested_model": "inherit_parent",
+  "requested_effort": "inherit_parent",
+  "fork_turns": "none",
+  "prompt_sha256": "b0f6c007f1ac86e270eb9a18db14ca69b54cf8322fda06c72fa77aeaf4317a05",
+  "started_ns": 1791126762133566000,
+  "time_limit_seconds": 600
+}

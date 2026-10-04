@@ -1,0 +1,10 @@
+{
+  "case": "fresh",
+  "arm": "on",
+  "requested_model": "inherit_parent",
+  "requested_effort": "inherit_parent",
+  "fork_turns": "none",
+  "prompt_sha256": "7c8e6489679a0b1c1c794670bd4b6f50e30837d821392a0fce630560cca28b6c",
+  "started_ns": 1791126015224925000,
+  "time_limit_seconds": 600
+}

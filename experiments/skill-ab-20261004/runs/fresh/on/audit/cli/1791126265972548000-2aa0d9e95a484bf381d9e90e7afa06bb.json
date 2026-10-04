@@ -1,0 +1,71 @@
+{
+  "start_ns": 1791126265972548000,
+  "end_ns": 1791126265977172000,
+  "argv": [
+    "next",
+    "case"
+  ],
+  "exit_code": 0,
+  "stdout": "reviewer\nstage_ready: Run reviewer with the current required inputs.\n",
+  "stderr": "",
+  "artifacts_before": {
+    "share/case/implementer/impl.md": {
+      "sha256": "ed7f0afec078ed5b7707e935d91006a18470a1c56e9a3ef3ecd69c2a4e44b315",
+      "mtime_ns": 1791126186813492767
+    },
+    "share/case/planner/plan.md": {
+      "sha256": "ac718c66a211088dd6835253483535ce908f8e4847289f61de78a1b30d00757d",
+      "mtime_ns": 1791126135411728617
+    },
+    "share/case/researcher/task.md": {
+      "sha256": "949064042bb7cf858769dbb6930d54d054478d22f4426cff7dace20e1ec0298a",
+      "mtime_ns": 1791126088437317174
+    },
+    "share/case/reviewer/impl.md": {
+      "sha256": "ed7f0afec078ed5b7707e935d91006a18470a1c56e9a3ef3ecd69c2a4e44b315",
+      "mtime_ns": 1791126265936502916
+    },
+    "share/case/reviewer/plan.md": {
+      "sha256": "ac718c66a211088dd6835253483535ce908f8e4847289f61de78a1b30d00757d",
+      "mtime_ns": 1791126265936377207
+    },
+    "share/case/reviewer/result.md": {
+      "sha256": "6c3e979913d73f8817f88caa688853a281541c453379231773376edabc1d7406",
+      "mtime_ns": 1791126255951842027
+    },
+    "share/case/reviewer/task.md": {
+      "sha256": "949064042bb7cf858769dbb6930d54d054478d22f4426cff7dace20e1ec0298a",
+      "mtime_ns": 1791126265936178914
+    }
+  },
+  "artifacts_after": {
+    "share/case/implementer/impl.md": {
+      "sha256": "ed7f0afec078ed5b7707e935d91006a18470a1c56e9a3ef3ecd69c2a4e44b315",
+      "mtime_ns": 1791126186813492767
+    },
+    "share/case/planner/plan.md": {
+      "sha256": "ac718c66a211088dd6835253483535ce908f8e4847289f61de78a1b30d00757d",
+      "mtime_ns": 1791126135411728617
+    },
+    "share/case/researcher/task.md": {
+      "sha256": "949064042bb7cf858769dbb6930d54d054478d22f4426cff7dace20e1ec0298a",
+      "mtime_ns": 1791126088437317174
+    },
+    "share/case/reviewer/impl.md": {
+      "sha256": "ed7f0afec078ed5b7707e935d91006a18470a1c56e9a3ef3ecd69c2a4e44b315",
+      "mtime_ns": 1791126265936502916
+    },
+    "share/case/reviewer/plan.md": {
+      "sha256": "ac718c66a211088dd6835253483535ce908f8e4847289f61de78a1b30d00757d",
+      "mtime_ns": 1791126265936377207
+    },
+    "share/case/reviewer/result.md": {
+      "sha256": "6c3e979913d73f8817f88caa688853a281541c453379231773376edabc1d7406",
+      "mtime_ns": 1791126255951842027
+    },
+    "share/case/reviewer/task.md": {
+      "sha256": "949064042bb7cf858769dbb6930d54d054478d22f4426cff7dace20e1ec0298a",
+      "mtime_ns": 1791126265936178914
+    }
+  }
+}

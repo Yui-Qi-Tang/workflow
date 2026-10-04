@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-10-04T15:13:06.817Z",
+  "arguments_except_message": {
+    "task_name": "skill_ab_blocked_off",
+    "fork_turns": "none"
+  },
+  "message_in_saved_rollout": "encrypted; not exported",
+  "saved_message_field_sha256": "1ba7df1bbbcc95ef3ca838f4fa6decc68a9733c3803ff7f51652cad31c098f77",
+  "matches_frozen_prompt": null,
+  "reason": "Encrypted saved spawn body cannot be byte-compared with submitted plaintext. The actual submitted plaintext is retained in prompt.txt and visible in the parent live call."
+}

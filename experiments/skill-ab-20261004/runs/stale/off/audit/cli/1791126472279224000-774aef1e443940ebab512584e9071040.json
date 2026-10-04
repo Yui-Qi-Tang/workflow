@@ -1,0 +1,79 @@
+{
+  "start_ns": 1791126472279224000,
+  "end_ns": 1791126472285347000,
+  "argv": [
+    "status",
+    "case"
+  ],
+  "exit_code": 0,
+  "stdout": "task=case status=needs_revision current=tasker next=tasker needs_user_input=False\ninput_changed: Input changed; regenerate this stage and its descendants. Existing files were preserved.\n",
+  "stderr": "",
+  "artifacts_before": {
+    "share/case/implementer/impl.md": {
+      "sha256": "987f0b806b9b74de872151a7ca35d3a300e37022ccc07b19d2e39f7834f9dbcf",
+      "mtime_ns": 1791125809452222703
+    },
+    "share/case/planner/plan.md": {
+      "sha256": "afa6075f96304ad5d93db5edc9036d735f6c4a8307e45864bf08ef4a09209ea5",
+      "mtime_ns": 1791125809409177552
+    },
+    "share/case/researcher/task.md": {
+      "sha256": "1cd729313d2ab10d9e9ee466a05ce0dff9e89dbf163daad3a46c5f9e9f5e14e0",
+      "mtime_ns": 1791125809366949034
+    },
+    "share/case/reviewer/impl.md": {
+      "sha256": "987f0b806b9b74de872151a7ca35d3a300e37022ccc07b19d2e39f7834f9dbcf",
+      "mtime_ns": 1791125809535693813
+    },
+    "share/case/reviewer/plan.md": {
+      "sha256": "afa6075f96304ad5d93db5edc9036d735f6c4a8307e45864bf08ef4a09209ea5",
+      "mtime_ns": 1791125809535584812
+    },
+    "share/case/reviewer/result.md": {
+      "sha256": "4559034ab2719cd4b9662d615dc1d4b469b3a794b545ed7f77dbfdd83736e94f",
+      "mtime_ns": 1791125809493420753
+    },
+    "share/case/reviewer/review.md": {
+      "sha256": "742f0c09baf80692b52c4cd627e5e43bea3e6a3c5021596a80680678f4d5ff2c",
+      "mtime_ns": 1791125809536511612
+    },
+    "share/case/reviewer/task.md": {
+      "sha256": "1cd729313d2ab10d9e9ee466a05ce0dff9e89dbf163daad3a46c5f9e9f5e14e0",
+      "mtime_ns": 1791125809535461019
+    }
+  },
+  "artifacts_after": {
+    "share/case/implementer/impl.md": {
+      "sha256": "987f0b806b9b74de872151a7ca35d3a300e37022ccc07b19d2e39f7834f9dbcf",
+      "mtime_ns": 1791125809452222703
+    },
+    "share/case/planner/plan.md": {
+      "sha256": "afa6075f96304ad5d93db5edc9036d735f6c4a8307e45864bf08ef4a09209ea5",
+      "mtime_ns": 1791125809409177552
+    },
+    "share/case/researcher/task.md": {
+      "sha256": "1cd729313d2ab10d9e9ee466a05ce0dff9e89dbf163daad3a46c5f9e9f5e14e0",
+      "mtime_ns": 1791125809366949034
+    },
+    "share/case/reviewer/impl.md": {
+      "sha256": "987f0b806b9b74de872151a7ca35d3a300e37022ccc07b19d2e39f7834f9dbcf",
+      "mtime_ns": 1791125809535693813
+    },
+    "share/case/reviewer/plan.md": {
+      "sha256": "afa6075f96304ad5d93db5edc9036d735f6c4a8307e45864bf08ef4a09209ea5",
+      "mtime_ns": 1791125809535584812
+    },
+    "share/case/reviewer/result.md": {
+      "sha256": "4559034ab2719cd4b9662d615dc1d4b469b3a794b545ed7f77dbfdd83736e94f",
+      "mtime_ns": 1791125809493420753
+    },
+    "share/case/reviewer/review.md": {
+      "sha256": "742f0c09baf80692b52c4cd627e5e43bea3e6a3c5021596a80680678f4d5ff2c",
+      "mtime_ns": 1791125809536511612
+    },
+    "share/case/reviewer/task.md": {
+      "sha256": "1cd729313d2ab10d9e9ee466a05ce0dff9e89dbf163daad3a46c5f9e9f5e14e0",
+      "mtime_ns": 1791125809535461019
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "status": "confirmed",
+  "reason": "Main agent manually read all visible tool-call bodies. Each shell command used assigned root; file operations were confined to permitted reads and generated outputs. Controller operations used recorder; no outside-root, peer, network, memory, audit edits or core bypass found. On loaded frozen body before workflow operations; off did not read skill body.",
+  "audited_tool_calls": 11,
+  "tool_trace_sha256": "eca479e18788ebebc148e358ec5e809fe9b9945f623399ccdbbc8712e43c3a83",
+  "evidence": [
+    "transcripts/stale/on/tool-and-public-messages.jsonl",
+    "transcripts/stale/on/metadata.json",
+    "runs/stale/on/audit/"
+  ],
+  "limits": "Visible-tool-trace qualification, not OS confinement or proof of private model cognition. Ambient catalog awareness shared; recorded NEW_TASK message is encrypted and the submitted plaintext prompt is retained separately."
+}

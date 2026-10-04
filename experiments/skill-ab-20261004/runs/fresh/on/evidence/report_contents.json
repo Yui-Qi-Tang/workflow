@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "public_check.py"
+  ],
+  "exit_status": 0,
+  "stdout": "report_contents: passed\n",
+  "stderr": "",
+  "report_sha256": "a03d9134a1d62fcfa49bc7a8e7469f35837cf73e1facebaf96ac41d1e64989fe"
+}

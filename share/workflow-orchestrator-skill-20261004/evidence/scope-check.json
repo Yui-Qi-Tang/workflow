@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "changed_tracked_files": [
+    "AGENTS.md",
+    "README.en.md",
+    "README.md",
+    "README.zh.md",
+    "agent_loop_poc/README.md",
+    "implementer/AGENTS.md",
+    "researcher/AGENTS.md",
+    "reviewer/AGENTS.md",
+    "tasker/AGENTS.md"
+  ],
+  "unchanged_tracked_files": 398,
+  "preserved_prior_untracked_files": 19,
+  "index_unchanged": true,
+  "git_diff_check_exit": 0,
+  "installed_local_links_checked": 25,
+  "candidate_removed": true,
+  "controller_version": "0.3.0"
+}

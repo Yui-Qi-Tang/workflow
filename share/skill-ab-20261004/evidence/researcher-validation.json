@@ -1,0 +1,32 @@
+{
+  "exit_code": 0,
+  "output": {
+    "schema_version": "agent_loop_poc.v2",
+    "task_id": "skill-ab-20261004",
+    "status": "validated",
+    "current_stage": "researcher",
+    "next_stage": null,
+    "last_completed_stage": "researcher",
+    "return_target": null,
+    "needs_user_input": false,
+    "reason": "Current prefix and saved artifact passed validation; this does not authorize routing.",
+    "reason_code": "artifact_valid",
+    "blocker": null,
+    "invalidated_artifacts": [],
+    "artifacts": {
+      "tasker_input": true,
+      "researcher_task": true,
+      "planner_plan": true,
+      "implementer_impl": false,
+      "reviewer_result": false,
+      "reviewer_review": false
+    },
+    "history": [],
+    "updated_at": "2026-10-04T14:50:50+00:00",
+    "validated_artifact": {
+      "path": "share/skill-ab-20261004/planner/plan.md",
+      "sha256": "deb9bce3fc1ab7bca01e0fb582c2ac2d119692622768df900f9598bfbee20de3"
+    }
+  },
+  "stderr": ""
+}

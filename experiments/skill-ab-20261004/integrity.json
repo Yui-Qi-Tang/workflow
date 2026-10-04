@@ -1,0 +1,27 @@
+{
+  "frozen_file_count": 100,
+  "changed_frozen": [],
+  "preexisting_file_count": 452,
+  "changed_preexisting": [],
+  "pairs": [
+    {
+      "case": "fresh",
+      "identical_common_files": true,
+      "skill_matches_frozen_body": true,
+      "identical_normalized_prompts": true
+    },
+    {
+      "case": "stale",
+      "identical_common_files": true,
+      "skill_matches_frozen_body": true,
+      "identical_normalized_prompts": true
+    },
+    {
+      "case": "blocked",
+      "identical_common_files": true,
+      "skill_matches_frozen_body": true,
+      "identical_normalized_prompts": true
+    }
+  ],
+  "passed": true
+}
